@@ -16,6 +16,7 @@
             height: 100vh;
             margin: 0;
             background-color: #2a2a2a;
+            overflow: hidden; /* Prevent scroll during loading */
         }
 
         header {
@@ -40,6 +41,42 @@
             height: 80%;
             max-width: 1200px;
             flex-direction: column;
+            opacity: 0; /* Initially hidden */
+            transition: opacity 1s; /* Fade-in effect */
+        }
+
+        /* Loader styles */
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #2a2a2a;
+            z-index: 1000; /* On top of everything */
+            opacity: 1;
+        }
+
+        .loader div {
+            width: 15px;
+            height: 15px;
+            margin: 3px;
+            border-radius: 50%;
+            animation: bounce 0.6s infinite alternate;
+        }
+
+        .loader div:nth-child(1) { background-color: #ff3d00; animation-delay: 0s; }
+        .loader div:nth-child(2) { background-color: #ffd600; animation-delay: 0.2s; }
+        .loader div:nth-child(3) { background-color: #76ff03; animation-delay: 0.4s; }
+        .loader div:nth-child(4) { background-color: #00e5ff; animation-delay: 0.6s; }
+        .loader div:nth-child(5) { background-color: #d500f9; animation-delay: 0.8s; }
+
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-20px); }
         }
 
         /* Responsive channel list with more columns */
@@ -54,7 +91,6 @@
             border-radius: 10px;
             overflow-y: auto;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            
             /* Dynamic columns based on screen size */
             grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
         }
@@ -69,7 +105,6 @@
             cursor: pointer;
             transition: transform 0.2s, box-shadow 0.3s;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            
         }
 
         .channel-item img {
@@ -84,7 +119,6 @@
         .channel-item span {
             font-size: 14px;
             color: #fff;
-           
             text-align: center;
         }
 
@@ -142,17 +176,16 @@
             }
 
             .channel-list {
-                max-height: 50%;
+                max-height: 55%;
                 width: 100%;
                 overflow-y: scroll;
-                margin-top: 20px;
+                margin-top: 8px;
                 border-radius: 10px;
             }
 
             .channel-item img {
                 width: 70px;
                 height: 70px;
-                
             }
         }
 
@@ -168,7 +201,7 @@
     <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=2b597a57a0fe4c7065b42182b81546f1b653bfa6'></script>
     <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1247290/t/5"></script>
     
-    <br>
+   
     
     <center>
         <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
@@ -176,6 +209,15 @@
         
         <noscript><a href="https://www.supercounters.com/">free online counter</a></noscript>
     </center>
+
+    <!-- Loader -->
+    <div class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 
     <div class="tv-container">
         <div class="player">
@@ -224,6 +266,10 @@
                 channelItem.addEventListener('click', () => playChannel(channel.url));
                 channelList.appendChild(channelItem);
             });
+
+            // Show content and hide loader after rendering
+            document.querySelector('.tv-container').style.opacity = 1; // Fade in the content
+            document.querySelector('.loader').style.display = 'none'; // Hide the loader
         }
 
         // Initialize Clappr player with default stream
