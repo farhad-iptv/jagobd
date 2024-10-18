@@ -4,19 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JagoBD Live</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/plyr@3.6.2/dist/plyr.css">
+    <script src="https://cdn.jsdelivr.net/npm/plyr@3.6.12/dist/plyr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@1.1.4/dist/hls.min.js"></script>
 
     <style>
-        /* Base styles */
+        /* Customized loading screen (as per previous player) */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Poppins', sans-serif;
+            background-color: #000;
+        }
+
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            z-index: 9999;
+        }
+
+        .loading-text {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            text-align: center;
+            width: 100%;
+            height: 100px;
+            line-height: 100px;
+        }
+
+        .loading-text span {
+            display: inline-block;
+            margin: 0 5px;
+            color: #07f32e;
+            font-family: 'Quattrocento Sans', sans-serif;
+            filter: blur(0px);
+            animation: blur-text 1.5s infinite linear alternate;
+        }
+
+        .loading-text span:nth-child(odd) {
+            animation-delay: 0.2s;
+        }
+
+        .loading-text span:nth-child(even) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes blur-text {
+            0% { filter: blur(0px); }
+            100% { filter: blur(4px); }
+        }
+
+        /* Plyr customization for the main color */
+        :root {
+            --plyr-color-main: #07f32e; /* Green color */
+        }
+
         body {
-            font-family: Arial, sans-serif;
             display: flex;
-            flex-direction: column; /* Set column direction for body */
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
             background-color: #2a2a2a;
-            overflow: hidden; /* Prevent scroll during loading */
+            overflow: hidden;
         }
 
         header {
@@ -41,45 +100,10 @@
             height: 80%;
             max-width: 1200px;
             flex-direction: column;
-            opacity: 0; /* Initially hidden */
-            transition: opacity 1s; /* Fade-in effect */
+            opacity: 0;
+            transition: opacity 1s;
         }
 
-        /* Loader styles */
-        .loader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #2a2a2a;
-            z-index: 1000; /* On top of everything */
-            opacity: 1;
-        }
-
-        .loader div {
-            width: 15px;
-            height: 15px;
-            margin: 3px;
-            border-radius: 50%;
-            animation: bounce 0.6s infinite alternate;
-        }
-
-        .loader div:nth-child(1) { background-color: #ff3d00; animation-delay: 0s; }
-        .loader div:nth-child(2) { background-color: #ffd600; animation-delay: 0.2s; }
-        .loader div:nth-child(3) { background-color: #76ff03; animation-delay: 0.4s; }
-        .loader div:nth-child(4) { background-color: #00e5ff; animation-delay: 0.6s; }
-        .loader div:nth-child(5) { background-color: #d500f9; animation-delay: 0.8s; }
-
-        @keyframes bounce {
-            0% { transform: translateY(0); }
-            100% { transform: translateY(-20px); }
-        }
-
-        /* Responsive channel list with more columns */
         .channel-list {
             width: 100%;
             background: #1e1e1e;
@@ -91,7 +115,6 @@
             border-radius: 10px;
             overflow-y: auto;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            /* Dynamic columns based on screen size */
             grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
         }
 
@@ -141,13 +164,11 @@
             border-radius: 10px;
         }
 
-        /* Clappr player will be styled dynamically */
-        #player {
+        #videoPlayer {
             width: 100%;
             height: 100%;
         }
 
-        /* Responsive styles */
         @media (min-width: 768px) {
             .tv-container {
                 flex-direction: row;
@@ -188,7 +209,6 @@
                 height: 70px;
             }
         }
-
     </style>
 </head>
 <body>
@@ -197,38 +217,42 @@
         <hr class="hr">
     </header>
 
-    
-
-    <!-- Loader -->
-    <div class="loader">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <!-- Loading animation -->
+    <div id="loading" class="loading">
+        <div class="loading-text">
+            <span>F</span>
+            <span>R</span>
+            <span>E</span> 
+            <span>E</span>
+            <span> </span>
+            <span>F</span>
+            <span>L</span>
+            <span>I</span>
+            <span>x</span>
+        </div>
     </div>
 
     <div class="tv-container">
         <div class="player">
-            <!-- Clappr player container -->
-            <div id="player"></div>
+            <!-- Plyr player container -->
+            <video id="videoPlayer" autoplay controls crossorigin playsinline></video>
         </div>
         <div class="channel-list" id="channel-list"></div>
     </div>
-    <a href='https://www.versicherungen.at/tier-krankenversicherung/'>Tier-Krankenversicherung</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=a0b1c4f79c8546c28135efffddaecd9063436b27'></script>
-<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1249358/t/5"></script>
-   
-    
-    <center>
-        <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
-        <script type="text/javascript">sc_online_i(1700767,"ffffff","e61c1c");</script>
-        
-        <noscript><a href="https://www.supercounters.com/">free online counter</a></noscript>
-    </center>
-    <!-- Clappr JS -->
-    <script src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
 
     <script>
+        // Function to hide loading screen after video is ready
+        function hideLoadingScreen() {
+            document.getElementById('loading').style.display = 'none';
+            document.querySelector('.tv-container').style.opacity = 1;
+        }
+
+        setTimeout(videovisible, 3000);
+
+        function videovisible() {
+            document.getElementById('loading').style.display = 'none';
+        }
+
         // Function to parse the playlist
         function parseM3U8(playlist) {
             const lines = playlist.split('\n');
@@ -265,36 +289,40 @@
                 channelList.appendChild(channelItem);
             });
 
-            // Show content and hide loader after rendering
-            document.querySelector('.tv-container').style.opacity = 1; // Fade in the content
-            document.querySelector('.loader').style.display = 'none'; // Hide the loader
+            hideLoadingScreen(); // Hide the loading screen after channels are loaded
         }
 
-        // Initialize Clappr player with default stream
-        let player = new Clappr.Player({
-            parentId: '#player',
-            source: 'https://mtlivestream.com/asian/ytlive/index.m3u8', // Set default stream
-            width: '100%',
-            height: '100%',
-            autoPlay: true,
-            mute: false,
-        });
-
-        // Function to play the selected channel
+        // Function to play the selected channel using Plyr and HLS.js
         function playChannel(url) {
-            player.load(url);
-            player.play();
+            const video = document.getElementById('videoPlayer');
+            const playerOptions = {};
+            
+            if (Hls.isSupported()) {
+                const hls = new Hls();
+                hls.loadSource(url);
+                hls.attachMedia(video);
+                new Plyr(video, playerOptions);
+            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                video.src = url;
+                video.play();
+                new Plyr(video, playerOptions);
+            } else {
+                alert('HLS is not supported in this browser.');
+            }
         }
 
-        // Fetch the playlist from the external file
+        // Fetch the playlist and initialize the channels
         fetch('playlist.m3u8')
             .then(response => response.text())
             .then(playlist => {
                 const channels = parseM3U8(playlist);
                 renderChannelList(channels);
+                playChannel(channels[0].url); // Play the first channel by default
             })
-            .catch(error => console.error('Error fetching the playlist:', error));
+            .catch(error => {
+                console.error('Error fetching the playlist:', error);
+                alert('Failed to load the playlist.');
+            });
     </script>
-    <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool@latest'></script>
 </body>
 </html>
