@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>STARPLAY TV</title>
+    <meta name="description" content="ENJOY FREE LIVE JIOTV">
+    <meta name="keywords" content="JIOTV, LIVETV, SPORTS, MOVIES, MUSIC">
+    <meta name="author" content="SH IPTV">
+    <link rel="shortcut icon" type="image/x-icon" href="https://i.ibb.co/37fVLxB/f4027915ec9335046755d489a14472f2.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/plyr@3.6.2/dist/plyr.css">
+    <script src="https://cdn.jsdelivr.net/npm/plyr@3.6.12/dist/plyr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@1.1.4/dist/hls.min.js"></script>
+
+    <style>
+        html {
+            font-family: Poppins;
+            background: #000;
+            margin: 0;
+            padding: 0;
+        }
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            z-index: 9999;
+        }
+        .loading-text {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            text-align: center;
+            width: 100%;
+            height: 100px;
+            line-height: 100px;
+        }
+        .loading-text span {
+            display: inline-block;
+            margin: 0 5px;
+            color: #07f32e;
+            font-family: 'Quattrocento Sans', sans-serif;
+            filter: blur(0px);
+            animation: blur-text 1.5s infinite linear alternate;
+        }
+        .loading-text span:nth-child(odd) {
+            animation-delay: 0.2s;
+        }
+        .loading-text span:nth-child(even) {
+            animation-delay: 0.4s;
+        }
+        @keyframes blur-text {
+            0% { filter: blur(0px); }
+            100% { filter: blur(4px); }
+        }
+        :root {
+            --plyr-color-main: #07f32e;
+        }
+    </style>
+</head>
+<body>
+    <div id="loading" class="loading">
+        <div class="loading-text">
+            <span>F</span>
+            <span>R</span>
+            <span>E</span> 
+            <span>E</span>
+            <span> </span>
+            <span>F</span>
+            <span>L</span>
+            <span>I</span>
+            <span>x</span>
+        </div>
+    </div>
+
+    <video id="videoPlayer" autoplay controls crossorigin playsinline>
+        <!-- Source will be dynamically added via JavaScript -->
+    </video>
+
+    <script>
+        setTimeout(videovisible, 3000);
+
+        function videovisible() {
+            document.getElementById('loading').style.display = 'none';
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const video = document.getElementById("videoPlayer");
+            const urlParams = new URLSearchParams(window.location.search);
+            const streamUrl = urlParams.get('stream');
+            const playerOptions = {};
+
+            if (!streamUrl) {
+                alert("No stream URL provided.");
+                return;
+            }
+
+            if (Hls.isSupported()) {
+                const hlsConfig = { maxMaxBufferLength: 10 };
+                const hls = new Hls(hlsConfig);
+                hls.loadSource(streamUrl);
+                hls.on(Hls.Events.MANIFEST_PARSED, function(event, data) {
+                    const qualities = hls.levels.map(level => level.height);
+                    playerOptions.quality = {
+                        default: qualities[0],
+                        options: qualities,
+                        forced: true,
+                        onChange: quality => {
+                            hls.levels.forEach((level, index) => {
+                                if (level.height === quality) {
+                                    hls.currentLevel = index;
+                                }
+                            });
+                        }
+                    };
+                    new Plyr(video, playerOptions);
+                });
+                hls.attachMedia(video);
+                window.hls = hls;
+            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                // This is for Safari, which supports HLS natively.
+                video.src = streamUrl;
+                video.addEventListener('loadedmetadata', () => {
+                    video.play();
+                });
+                new Plyr(video, playerOptions);
+            } else {
+                alert("HLS not supported on this browser.");
+            }
+        });
+    </script>
+</body>
+</html>
