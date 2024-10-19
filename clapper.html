@@ -10,7 +10,7 @@
     <meta name="author" content="SH IPTV">
     <link rel="shortcut icon" type="image/x-icon" href="https://i.ibb.co/37fVLxB/f4027915ec9335046755d489a14472f2.png">
 
-    <!-- Clappr Player CSS and JS -->
+    <!-- Clappr CSS and JS -->
     <script src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
 
     <style>
@@ -59,6 +59,10 @@
             0% { filter: blur(0px); }
             100% { filter: blur(4px); }
         }
+        #player {
+            width: 100%;
+            height: 100vh;
+        }
     </style>
 </head>
 <body>
@@ -77,7 +81,7 @@
     </div>
 
     <!-- Clappr Player Container -->
-    <div id="player" style="width: 100%; height: 100vh;"></div>
+    <div id="player"></div>
 
     <script>
         setTimeout(videovisible, 3000);
@@ -98,16 +102,12 @@
             // Initialize Clappr player
             const player = new Clappr.Player({
                 source: streamUrl,
-                parentId: '#player',
-                autoPlay: true,
-                mute: false,
+                parentId: "#player",
+                autoplay: true,
                 height: '100%',
                 width: '100%',
-                playback: {
-                    hlsjsConfig: {
-                        maxBufferLength: 10,
-                    }
-                }
+                mute: false,
+                mediacontrol: { seekbar: "#07f32e", buttons: "#07f32e" }
             });
         });
     </script>
