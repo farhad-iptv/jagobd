@@ -1,6 +1,6 @@
 #EXTM3U
 #EXTINF:0 tvg-logo="https://i.ibb.co.com/cDm2rBh/icon.png" group-title="Free Flix",FREE FLIX
-http://freeflix.run.place/into/master.m3u8
+https://raw.githubusercontent.com/tvs6/m3u/refs/heads/main/master.m3u8
 
 #EXTINF:0 tvg-logo="http://www.jagobd.com/wp-content/uploads/2015/12/asiantv.jpg?x91288" group-title="JagoBD",Asian TV
 https://mtlivestream.com/asian/ytlive/index.m3u8
