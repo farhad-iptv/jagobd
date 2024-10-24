@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -200,11 +201,39 @@
             .channel-slider-container{
                 max-width: 320px;
             }
+
+            .tv-container iframe{
+                height: 250px;
+            }
+
+            
+        }
+        .header{
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header h4{
+            font-size: 40px;
+            margin: 0px;
+            font-style: italic;
+            color: rgb(25, 250, 25);
+           
+        }
+
+        .hr{
+            width: 25%;
         }
     </style>
 </head>
 <body>
+<div class="header">
+    <h4>FREE FLIX</h4>
+</div>
 
+<hr class="hr">
 <div class="main-container">
     <div class="tv-container">
         <iframe id="liveTV" src="http://jagobd.run.place/videojs.html?stream=https://raw.githubusercontent.com/tvs6/m3u/refs/heads/main/109987.m3u8" scrolling="no" allow="accelerometer;autoplay;encrypted-media;gyroscope;picture-in-picture" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
@@ -220,24 +249,28 @@
                     <img src="https://upload.wikimedia.org/wikipedia/en/1/11/T_Sports_logo.png" alt="Channel 1">
                 </div>
 
-                <div class="img-div" onclick="openModal(['http://jagobd.run.place/videojs.html?stream=https://mtlivestream.com/asian/ytlive/index.m3u8', 'https://www.example.com/channel2-2'])">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFwd0kw63TldwEAYWr6HVcA6LpobsxzDmKeg&s" alt="Channel 2">
+                <div class="img-div" onclick="openModal(['http://jagobd.run.place/videojs.html?stream=http://125.209.88.166:45793/BRN/PTVSports.stream/playlist.m3u8', 'https://www.example.com/channel2-2'])">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFwd0kw63TldwEAYWr6HVcA6LpobsxzDmKeg&s" alt="ptv">
                 </div>
 
-                <div class="img-div" onclick="openModal(['https://www.example.com/channel3-1', 'https://www.example.com/channel3-2'])">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDuSnhZM781OL5Yl9KapyIuEe_z8fNQrdqmw&s" alt="Channel 3">
+                <div class="img-div" onclick="openModal(['http://jagobd.run.place/videojs.html?stream=http://125.209.88.166:45793/BRN/ArySports.stream/playlist.m3u8', 'https://www.example.com/channel3-2'])">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDuSnhZM781OL5Yl9KapyIuEe_z8fNQrdqmw&s" alt="asports">
                 </div>
 
-                <div class="img-div" onclick="openModal(['https://www.example.com/channel4-1', 'https://www.example.com/channel4-2'])">
-                    <img src="https://skymediaglobal.b-cdn.net/wp-content/uploads/2020/09/Sky-Sports-Cricket-2020-logo-250.png" alt="Channel 4">
+                <div class="img-div" onclick="openModal(['http://jagobd.run.place/videojs.html?stream=http://125.209.88.166:45793/BRN/TenSports.stream/playlist.m3u8', 'https://www.example.com/channel3-2'])">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/1/12/Ten_Sports_Logo.png" alt="asports">
                 </div>
 
-                <div class="img-div" onclick="openModal(['https://www.example.com/channel4-1', 'https://www.example.com/channel4-2'])">
-                    <img src="https://skymediaglobal.b-cdn.net/wp-content/uploads/2020/09/Sky-Sports-Cricket-2020-logo-250.png" alt="Channel 4">
+                <div class="img-div" onclick="openModal(['https://jagobd.run.place/videojs.html?stream=http://unity-gaming.net:8080/live/testforflorin/h3jR9MKh/17967.m3u8', 'https://www.example.com/channel4-2'])">
+                    <img src="https://skymediaglobal.b-cdn.net/wp-content/uploads/2020/09/Sky-Sports-Cricket-2020-logo-250.png" alt="skycric">
                 </div>
 
-                <div class="img-div" onclick="openModal(['https://www.example.com/channel4-1', 'https://www.example.com/channel4-2'])">
-                    <img src="https://skymediaglobal.b-cdn.net/wp-content/uploads/2020/09/Sky-Sports-Cricket-2020-logo-250.png" alt="Channel 4">
+                <div class="img-div" onclick="openModal(['http://jagobd.run.place/videojs.html?stream=http://unity-gaming.net:8080/live/testforflorin/h3jR9MKh/1114.m3u8', 'https://www.example.com/channel4-2'])">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvaQWvQGNUE12nC2tclWdOSSWid5nbZ8u-fA&s" alt="willow">
+                </div>
+
+                <div class="img-div" onclick="openModal(['https://jagobd.run.place/videojs.html?stream=http://unity-gaming.net:8080/live/testforflorin/h3jR9MKh/16960.m3u8', 'https://www.example.com/channel4-2'])">
+                    <img src="https://sc.dish.com/shared/images/station-logos/WLXTR.png" alt="willowxtra">
                 </div>
 
                 <div class="img-div" onclick="openModal(['https://www.example.com/channel4-1', 'https://www.example.com/channel4-2'])">
