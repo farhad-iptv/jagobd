@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .admin-container {
+            max-width: 600px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .channel-list {
+            margin-top: 20px;
+        }
+
+        .channel-item {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .delete-btn {
+            color: #ff0000;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="admin-container">
+    <h2>Admin Panel - Add Channel</h2>
+    <form id="channelForm">
+        <label for="channelName">Channel Name:</label>
+        <input type="text" id="channelName" required>
+
+        <label for="channelLogo">Channel Logo URL:</label>
+        <input type="text" id="channelLogo" required>
+
+        <label for="channelStreams">Stream URLs (comma-separated):</label>
+        <textarea id="channelStreams" rows="3" required></textarea>
+
+        <button type="button" onclick="addChannel()">Add Channel</button>
+    </form>
+
+    <div class="channel-list" id="channelList">
+        <h3>Channel List</h3>
+        <!-- List of channels will be displayed here -->
+    </div>
+</div>
+
+<script>
+    // Load existing channels from local storage
+    document.addEventListener('DOMContentLoaded', displayChannels);
+
+    function displayChannels() {
+        const channelList = document.getElementById('channelList');
+        channelList.innerHTML = '';
+        const channels = JSON.parse(localStorage.getItem('channels')) || [];
+        channels.forEach((channel, index) => {
+            const div = document.createElement('div');
+            div.className = 'channel-item';
+            div.innerHTML = `
+                <span>${channel.name}</span>
+                <span class="delete-btn" onclick="deleteChannel(${index})">Delete</span>
+            `;
+            channelList.appendChild(div);
+        });
+    }
+
+    function addChannel() {
+        const name = document.getElementById('channelName').value;
+        const logo = document.getElementById('channelLogo').value;
+        const streams = document.getElementById('channelStreams').value.split(',').map(url => url.trim());
+
+        const newChannel = { name, logo, streams };
+        const channels = JSON.parse(localStorage.getItem('channels')) || [];
+        channels.push(newChannel);
+        localStorage.setItem('channels', JSON.stringify(channels));
+        
+        document.getElementById('channelForm').reset();
+        displayChannels();
+        alert('Channel added successfully!');
+    }
+
+    function deleteChannel(index) {
+        const channels = JSON.parse(localStorage.getItem('channels'));
+        channels.splice(index, 1);
+        localStorage.setItem('channels', JSON.stringify(channels));
+        displayChannels();
+    }
+</script>
+</body>
+</html>
