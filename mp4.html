@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Stream</title>
+    <meta name="description" content="Enjoy free live streaming">
+    <meta name="keywords" content="Streaming, Live, Movies, TV">
+    <meta name="author" content="SH IPTV">
+    <link rel="shortcut icon" type="image/x-icon" href="https://i.ibb.co/37fVLxB/f4027915ec9335046755d489a14472f2.png">
+
+    <!-- Plyr.js CSS -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+
+    <style>
+        html {
+            font-family: Poppins;
+            background: #000;
+            margin: 0;
+            padding: 0;
+        }
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            z-index: 9999;
+        }
+        .loading-text {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            text-align: center;
+            width: 100%;
+            height: 100px;
+            line-height: 100px;
+        }
+        .loading-text span {
+            display: inline-block;
+            margin: 0 5px;
+            color: #ff0000;
+            font-family: 'Quattrocento Sans', sans-serif;
+            filter: blur(0px);
+            animation: blur-text 1.5s infinite linear alternate;
+        }
+        .loading-text span:nth-child(odd) {
+            animation-delay: 0.2s;
+        }
+        .loading-text span:nth-child(even) {
+            animation-delay: 0.4s;
+        }
+        @keyframes blur-text {
+            0% { filter: blur(0px); }
+            100% { filter: blur(4px); }
+        }
+        .plyr {
+            width: 100% !important;
+            height: 100vh !important;
+        }
+        /* Custom Plyr color - Red */
+        .plyr__control--overlaid,
+        .plyr__control--overlaid:hover,
+        .plyr__control {
+            background-color: #ff0000 !important; /* Main button color */
+        }
+        .plyr__control--pressed, 
+        .plyr__control--pressed:hover {
+            background-color: #ff0000 !important; /* Pressed button color */
+        }
+        .plyr__controls [data-plyr="play"],
+        .plyr__controls [data-plyr="pause"],
+        .plyr__controls [data-plyr="mute"],
+        .plyr__controls [data-plyr="volume"],
+        .plyr__controls [data-plyr="fullscreen"],
+        .plyr__controls [data-plyr="captions"],
+        .plyr__controls [data-plyr="settings"] {
+            color: #ffffff !important; /* Icon color */
+        }
+    </style>
+</head>
+<body>
+    <div id="loading" class="loading">
+        <div class="loading-text">
+            <span>F</span>
+            <span>R</span>
+            <span>E</span> 
+            <span>E</span>
+            <span> </span>
+            <span>F</span>
+            <span>L</span>
+            <span>I</span>
+            <span>x</span>
+        </div>
+    </div>
+
+    <!-- Plyr.js Player Container -->
+    <video id="video-player" class="plyr" controls autoplay></video>
+
+    <!-- Plyr.js Script -->
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+
+    <script>
+        setTimeout(() => {
+            document.getElementById('loading').style.display = 'none';
+        }, 3000);
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const videoUrl = urlParams.get('stream');
+
+            if (!videoUrl) {
+                
+                return;
+            }
+
+            // Set the video source and initialize Plyr
+            const videoElement = document.getElementById('video-player');
+            videoElement.src = videoUrl;
+            
+            // Initialize Plyr with the video element
+            const player = new Plyr(videoElement, { settings: ['captions', 'quality', 'speed'] });
+        });
+    </script>
+</body>
+</html>
