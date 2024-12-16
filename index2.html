@@ -312,7 +312,7 @@
         }
 
         // Fetch the playlist and initialize the channels
-        fetch('https://buddyxiptv-aynaapi.onrender.com/api/aynaforvlc.m3u')
+        fetch('https://buddyxiptv-aynaapi.onrender.com/api/aynalive.m3u')
             .then(response => response.text())
             .then(playlist => {
                 const channels = parseM3U8(playlist);
