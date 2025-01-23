@@ -1,0 +1,15 @@
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-MEDIA-SEQUENCE:0
+#EXT-X-ALLOW-CACHE:YES
+#EXT-X-TARGETDURATION:11
+#EXTINF:4, no desc
+http://atg100.xyz:80/live/UL33K17/SYC4T9D/510487.ts
+#EXTINF:4, no desc
+http://atg100.xyz:80/live/UL33K17/SYC4T9D/510487.ts
+#EXTINF:4, no desc
+http://atg100.xyz:80/live/UL33K17/SYC4T9D/510487.ts
+#EXTINF:4, no desc
+http://atg100.xyz:80/live/UL33K17/SYC4T9D/510487.ts
+#EXTINF:4, no desc
+http://atg100.xyz:80/live/UL33K17/SYC4T9D/510487.ts
