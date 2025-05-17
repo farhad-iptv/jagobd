@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://crichd.onlinetvbd.com/files/jwplayer.css">
+
+<title>Video Player</title>
+
+<style>
+  #myElement {
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  
+  .slide-out-button {
+    position: fixed;
+    top: 10%;
+    right: 0;
+    z-index: 1;
+    max-width: 18px;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 4px 0 0 4px;
+    transform: translate3d(0,0,0);
+    text-size-adjust: none;
+    
+  }
+
+  .slide-out-button .slide-out-title {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0);
+    line-height: 10px;
+    padding: 0.5rem;
+    white-space: nowrap;
+    background: #546e7a;
+  }
+
+  .slide-out-button.slide-in, .slide-out-button:hover {
+    max-width: 200px;
+  }
+
+  .slide-out-button.slide-in .slide-out-title, .slide-out-button:hover .slide-out-title {
+    color: #fff;
+  }
+
+  .hide {
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+  }
+
+  .parent {
+    text-align: left;
+  }
+
+  .show {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .btn {
+    white-space: nowrap;
+  }
+
+  #memek {
+    position: fixed;
+    z-index: 99;
+    padding: 1rem;
+  }
+
+  .none {
+    display: none;
+  }
+</style>
+</head>
+<body style="background: black; margin: 0; padding: 0;">
+<div class='video'>
+    
+<script src="https://use.fontawesome.com/20603b964f.js"></script>
+<!-- <script type="text/javascript" src="https://content.jwplatform.com/libraries/hDZaZjnc.js"></script> -->
+<script type="text/javascript" src="https://freeplayer.pages.dev/libraries/hDZaZjnc.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<div id="myElement"></div>
+<script type="text/javascript">
+    jwplayer.key = 'ksaKvjlJRbnrPXSGpuPVqfscYS9+rZFhulEcXvUQMbyWAmIQyyjPjZAQPLw=';
+    jwplayer("myElement").setup({
+        file: getUrlParameter('link') || "/404.mp4",
+        type: 'mp4',
+        autostart: true,
+        mute: false, 
+        stretching: "uniform",
+        logo: {
+            file: null
+        }
+    });
+
+    function getUrlParameter(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    };
+    
+</script>
+</div>  
+</body>
+</html>
