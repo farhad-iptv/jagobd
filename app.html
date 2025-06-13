@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FreeFlix - Live Sports Streaming</title>
-    <link rel="stylesheet" href="style.css">
+    
     <!-- Changed font to Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,73 +36,36 @@ body.light-mode {
 }
 
 /* General Styles */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
+* { box-sizing: border-box; margin: 0; padding: 0; }
 body {
-    font-family: 'Poppins', sans-serif; /* Changed Font */
+    font-family: 'Poppins', sans-serif;
     background-color: var(--primary-bg-color);
     color: var(--text-color-primary);
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Header and Navigation */
+/* Header and Navigation - No changes */
 header {
     background-color: var(--secondary-bg-color);
     padding: 1rem 2rem;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    position: sticky; top: 0; z-index: 1000;
 }
+nav { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
+.logo { font-size: 1.8rem; font-weight: 700; color: var(--accent-color); letter-spacing: 1px; }
+.theme-icon-container { cursor: pointer; }
+.theme-icon-container svg { width: 24px; height: 24px; stroke: var(--icon-color); transition: transform 0.3s ease; }
+.theme-icon-container:hover svg { transform: scale(1.1) rotate(15deg); }
+.moon-icon { display: block; } .sun-icon { display: none; }
+body.light-mode .moon-icon { display: none; } body.light-mode .sun-icon { display: block; }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.logo {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--accent-color);
-    letter-spacing: 1px;
-}
-
-/* NEW: Theme Icon Styles */
-.theme-icon-container {
-    cursor: pointer;
-}
-.theme-icon-container svg {
-    width: 24px;
-    height: 24px;
-    stroke: var(--icon-color);
-    transition: transform 0.3s ease;
-}
-.theme-icon-container:hover svg {
-    transform: scale(1.1) rotate(15deg);
-}
-/* Logic to show correct icon */
-.moon-icon { display: block; }
-.sun-icon { display: none; }
-body.light-mode .moon-icon { display: none; }
-body.light-mode .sun-icon { display: block; }
-
-
-/* Main Content & NEW Stylish Match Cards */
-main {
-    padding: 2rem;
-}
-
+/* Main Content & NARROW HEIGHT Match Cards */
+main { padding: 2rem; }
 #matches-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-    gap: 2rem;
+    /* CHANGED: Wider minmax to suit horizontal layout */
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
+    gap: 1.5rem;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -110,8 +73,7 @@ main {
 .match-card {
     background: var(--card-bg-gradient);
     border-radius: 16px;
-    padding: 1.5rem;
-    text-align: center;
+    padding: 1rem 1.5rem; /* Reduced vertical padding */
     cursor: pointer;
     border: 1px solid var(--card-border-color);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
@@ -120,85 +82,100 @@ main {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.match-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.4);
-}
-
-.match-card.live:hover {
-    box-shadow: 0 0 25px var(--accent-color-glow), 0 12px 40px 0 rgba(0, 0, 0, 0.4);
-}
+.match-card:hover { transform: translateY(-8px); box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.4); }
+.match-card.live:hover { box-shadow: 0 0 25px var(--accent-color-glow), 0 12px 40px 0 rgba(0, 0, 0, 0.4); }
 
 .event-title {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 600;
     color: var(--text-color-secondary);
     text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 0.5rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid var(--card-border-color);
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-bottom: 1rem; /* Space between title and details */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
+/* CHANGED: Horizontal layout for match details */
 .match-details {
     display: flex;
+    flex-direction: row; /* Horizontal layout */
     justify-content: space-between;
     align-items: center;
-    margin: 2rem 0;
 }
 
 .team {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Stack logo and name vertically */
     align-items: center;
-    gap: 0.75rem;
-    width: 120px;
+    gap: 0.5rem;
+    width: 100px; /* Constrain team width */
 }
 
 .team-logo {
-    width: 70px;
-    height: 70px;
+    width: 45px; /* Smaller logo */
+    height: 45px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid var(--card-border-color);
-    padding: 3px;
+    border: 2px solid var(--card-border-color);
+    padding: 2px;
     background-color: var(--primary-bg-color);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 .team-name {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--text-color-primary);
-}
-
-.vs {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--text-color-secondary);
-    border: 1px solid var(--card-border-color);
-    background-color: var(--primary-bg-color);
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 50%;
-}
-
-.status-box .countdown {
-    font-size: 1.4rem;
+    font-size: 0.9rem;
     font-weight: 600;
     color: var(--text-color-primary);
-    letter-spacing: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    text-align: center;
 }
 
-.status-box .live-button {
+/* NEW: Central column for VS/Status */
+.match-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+/* NEW: Container for VS icon and countdown text */
+.countdown-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+/* NEW: Crossed swords VS icon */
+.vs-icon {
+    width: 24px;
+    height: 24px;
+    stroke: var(--text-color-secondary);
+    opacity: 0.7;
+}
+
+.countdown {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-color-primary);
+    letter-spacing: 1px;
+}
+
+.live-button {
     background-color: var(--accent-color);
     color: white;
-    padding: 0.6rem 2rem;
+    padding: 0.5rem 1.5rem; /* Smaller button */
     border-radius: 8px;
     font-weight: 700;
+    font-size: 0.9rem;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     display: inline-block;
     box-shadow: 0 0 15px var(--accent-color-glow);
     animation: pulse 2s infinite ease-in-out;
@@ -210,69 +187,14 @@ main {
     100% { transform: scale(1); box-shadow: 0 0 15px var(--accent-color-glow); }
 }
 
-/* Modal Styles - Largely unchanged, minor color adjustments */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1001;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.6);
-    backdrop-filter: blur(5px);
-}
-
-.modal-content {
-    background-color: var(--secondary-bg-color);
-    margin: 15% auto;
-    padding: 2rem;
-    border: 1px solid var(--card-border-color);
-    width: 90%;
-    max-width: 500px;
-    border-radius: 12px;
-    position: relative;
-    animation: slideIn 0.3s ease-out;
-}
-
-@keyframes slideIn {
-    from { transform: translateY(-50px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-}
-
-.close-button {
-    color: #aaa;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close-button:hover,
-.close-button:focus {
-    color: var(--text-color-primary);
-    text-decoration: none;
-    cursor: pointer;
-}
-
-#modal-links a {
-    display: block;
-    background-color: var(--primary-bg-color);
-    color: var(--text-color-primary);
-    padding: 12px 15px;
-    margin-top: 10px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.2s, transform 0.2s;
-}
-
-#modal-links a:hover {
-    background-color: var(--accent-color);
-    color: white;
-    transform: translateX(5px);
-}
+/* Modal Styles - No changes */
+.modal { display: none; position: fixed; z-index: 1001; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.6); backdrop-filter: blur(5px); }
+.modal-content { background-color: var(--secondary-bg-color); margin: 15% auto; padding: 2rem; border: 1px solid var(--card-border-color); width: 90%; max-width: 500px; border-radius: 12px; position: relative; animation: slideIn 0.3s ease-out; }
+@keyframes slideIn { from { transform: translateY(-50px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+.close-button { color: #aaa; position: absolute; top: 10px; right: 20px; font-size: 28px; font-weight: bold; }
+.close-button:hover, .close-button:focus { color: var(--text-color-primary); text-decoration: none; cursor: pointer; }
+#modal-links a { display: block; background-color: var(--primary-bg-color); color: var(--text-color-primary); padding: 12px 15px; margin-top: 10px; text-decoration: none; border-radius: 5px; transition: background-color 0.2s, transform 0.2s; }
+#modal-links a:hover { background-color: var(--accent-color); color: white; transform: translateX(5px); }
     </style>
 </head>
 <body>
@@ -307,49 +229,29 @@ main {
         </div>
     </div>
 
-    <script>document.addEventListener('DOMContentLoaded', () => {
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
 
-    // --- UPDATED THEME SWITCHER ---
+    // --- THEME SWITCHER (No changes needed) ---
     const themeToggler = document.getElementById('theme-toggler');
-
-    // Function to apply theme from localStorage
     const applyTheme = () => {
         const currentTheme = localStorage.getItem('theme');
-        if (currentTheme === 'light-mode') {
-            document.body.classList.add('light-mode');
-        } else {
-            document.body.classList.remove('light-mode'); // Default to dark
-        }
+        document.body.classList.toggle('light-mode', currentTheme === 'light-mode');
     };
-    
-    // Listen for a click on the toggler
     themeToggler.addEventListener('click', () => {
         document.body.classList.toggle('light-mode');
-        
-        // Save the new theme to localStorage
-        if (document.body.classList.contains('light-mode')) {
-            localStorage.setItem('theme', 'light-mode');
-        } else {
-            localStorage.setItem('theme', 'dark-mode');
-        }
+        localStorage.setItem('theme', document.body.classList.contains('light-mode') ? 'light-mode' : 'dark-mode');
     });
-    
-    // Apply saved theme on initial load
     applyTheme();
-
 
     // --- MODAL LOGIC (No changes needed) ---
     const modal = document.getElementById('links-modal');
     const closeButton = document.querySelector('.close-button');
     const modalLinksContainer = document.getElementById('modal-links');
-
     closeButton.onclick = () => modal.style.display = "none";
     window.onclick = (event) => {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
+        if (event.target == modal) modal.style.display = "none";
     };
-    
     function showModal(streams) {
         modalLinksContainer.innerHTML = '';
         if (streams && streams.length > 0) {
@@ -366,8 +268,7 @@ main {
         modal.style.display = "block";
     }
 
-
-    // --- FETCH AND DISPLAY MATCHES (No changes needed) ---
+    // --- FETCH AND DISPLAY MATCHES ---
     const matchesContainer = document.getElementById('matches-container');
 
     async function loadMatches() {
@@ -395,6 +296,7 @@ main {
 
             if (isLive) card.classList.add('live');
 
+            // --- UPDATED HTML TEMPLATE FOR NARROW HEIGHT CARD ---
             card.innerHTML = `
                 <div class="event-title">${match.event}</div>
                 <div class="match-details">
@@ -402,24 +304,27 @@ main {
                         <img src="${match.team1Logo}" alt="${match.team1}" class="team-logo">
                         <div class="team-name">${match.team1}</div>
                     </div>
-                    <div class="vs">VS</div>
+
+                    <div class="match-center">
+                        ${isLive 
+                            ? `<div class="live-button">Live</div>` 
+                            : `<div class="countdown-wrapper">
+                                 <svg class="vs-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                 <div class="countdown" id="countdown-${match.id}"></div>
+                               </div>`
+                        }
+                    </div>
+
                     <div class="team">
                         <img src="${match.team2Logo}" alt="${match.team2}" class="team-logo">
                         <div class="team-name">${match.team2}</div>
                     </div>
                 </div>
-                <div class="status-box">
-                    ${isLive 
-                        ? `<div class="live-button">Live</div>` 
-                        : `<div class="countdown" id="countdown-${match.id}"></div>`
-                    }
-                </div>
             `;
+            // --- END OF UPDATED TEMPLATE ---
             
             matchesContainer.appendChild(card);
-
             card.addEventListener('click', () => showModal(match.streams));
-
             if (!isLive) startCountdown(match.id, matchTime);
         });
     }
@@ -427,34 +332,33 @@ main {
     function startCountdown(matchId, matchTime) {
         const countdownElement = document.getElementById(`countdown-${matchId}`);
         const cardElement = document.querySelector(`.match-card[data-match-id='${matchId}']`);
-
         const interval = setInterval(() => {
             const now = new Date().getTime();
             const distance = matchTime - now;
-
             if (distance < 0) {
                 clearInterval(interval);
-                countdownElement.parentElement.innerHTML = `<div class="live-button">Live</div>`;
+                // Replace the entire center content when timer ends
+                const centerElement = cardElement.querySelector('.match-center');
+                if (centerElement) {
+                    centerElement.innerHTML = `<div class="live-button">Live</div>`;
+                }
                 if(cardElement) cardElement.classList.add('live');
                 return;
             }
-
             const days = Math.floor(distance / (1000 * 60 * 60 * 24));
             const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
             let countdownText = '';
             if (days > 0) countdownText += `${days}d `;
             countdownText += `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
-            
             if(countdownElement) countdownElement.innerHTML = countdownText;
-
         }, 1000);
     }
 
     // Initial load
     loadMatches();
-});</script>
+});
+    </script>
 </body>
 </html>
