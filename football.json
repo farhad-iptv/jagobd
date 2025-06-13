@@ -1,0 +1,30 @@
+{
+  "matches": [
+    {
+      "id": 201,
+      "event": "Premier League",
+      "team1": "Man United",
+      "team1Logo": "https://i.imgur.com/e143rpe.png",
+      "team2": "Liverpool",
+      "team2Logo": "https://i.imgur.com/a4OOJbW.png",
+      "matchTime": "2025-06-13T09:33",
+      "streams": [
+        { "name": "Sky Sports - HD", "url": "#" },
+        { "name": "ESPN+ - 4K", "url": "#" }
+      ]
+    },
+    {
+      "id": 202,
+      "event": "La Liga",
+      "team1": "Real Madrid",
+      "team1Logo": "https://i.imgur.com/S9q8y3j.png",
+      "team2": "Barcelona",
+      "team2Logo": "https://i.imgur.com/s6E22d8.png",
+      "matchTime": "2025-06-13T09:33",
+      "streams": [
+        { "name": "beIN Sports 1", "url": "#" },
+        { "name": "Fanatiz USA", "url": "#" }
+      ]
+    }
+  ]
+}
