@@ -1,8 +1,460 @@
 <!DOCTYPE html>
-<head><title></title></head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeFlix - Live Sports Streaming</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Changed font to Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Color variables for easy theme switching */
+:root {
+    --primary-bg-color: #101010;
+    --secondary-bg-color: #1A1A1A;
+    --card-bg-gradient: linear-gradient(145deg, #2C2C2C, #1E1E1E);
+    --text-color-primary: #EAEAEA;
+    --text-color-secondary: #999;
+    --accent-color: #E50914;
+    --accent-color-glow: rgba(229, 9, 20, 0.5);
+    --card-border-color: rgba(255, 255, 255, 0.1);
+    --icon-color: #EAEAEA;
+}
+
+body.light-mode {
+    --primary-bg-color: #F0F2F5;
+    --secondary-bg-color: #FFFFFF;
+    --card-bg-gradient: linear-gradient(145deg, #FFFFFF, #F7F7F7);
+    --text-color-primary: #1c1e21;
+    --text-color-secondary: #606770;
+    --accent-color: #1877F2;
+    --accent-color-glow: rgba(24, 119, 242, 0.4);
+    --card-border-color: rgba(0, 0, 0, 0.1);
+    --icon-color: #1c1e21;
+}
+
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Changed Font */
+    background-color: var(--primary-bg-color);
+    color: var(--text-color-primary);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Header and Navigation */
+header {
+    background-color: var(--secondary-bg-color);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    letter-spacing: 1px;
+}
+
+/* NEW: Theme Icon Styles */
+.theme-icon-container {
+    cursor: pointer;
+}
+.theme-icon-container svg {
+    width: 24px;
+    height: 24px;
+    stroke: var(--icon-color);
+    transition: transform 0.3s ease;
+}
+.theme-icon-container:hover svg {
+    transform: scale(1.1) rotate(15deg);
+}
+/* Logic to show correct icon */
+.moon-icon { display: block; }
+.sun-icon { display: none; }
+body.light-mode .moon-icon { display: none; }
+body.light-mode .sun-icon { display: block; }
+
+
+/* Main Content & NEW Stylish Match Cards */
+main {
+    padding: 2rem;
+}
+
+#matches-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.match-card {
+    background: var(--card-bg-gradient);
+    border-radius: 16px;
+    padding: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid var(--card-border-color);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.match-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.4);
+}
+
+.match-card.live:hover {
+    box-shadow: 0 0 25px var(--accent-color-glow), 0 12px 40px 0 rgba(0, 0, 0, 0.4);
+}
+
+.event-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-color-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--card-border-color);
+}
+
+.match-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    width: 120px;
+}
+
+.team-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--card-border-color);
+    padding: 3px;
+    background-color: var(--primary-bg-color);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.team-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-color-primary);
+}
+
+.vs {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color-secondary);
+    border: 1px solid var(--card-border-color);
+    background-color: var(--primary-bg-color);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.status-box .countdown {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-color-primary);
+    letter-spacing: 2px;
+}
+
+.status-box .live-button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.6rem 2rem;
+    border-radius: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    display: inline-block;
+    box-shadow: 0 0 15px var(--accent-color-glow);
+    animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); box-shadow: 0 0 15px var(--accent-color-glow); }
+    50% { transform: scale(1.05); box-shadow: 0 0 25px var(--accent-color-glow); }
+    100% { transform: scale(1); box-shadow: 0 0 15px var(--accent-color-glow); }
+}
+
+/* Modal Styles - Largely unchanged, minor color adjustments */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: var(--secondary-bg-color);
+    margin: 15% auto;
+    padding: 2rem;
+    border: 1px solid var(--card-border-color);
+    width: 90%;
+    max-width: 500px;
+    border-radius: 12px;
+    position: relative;
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.close-button {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: var(--text-color-primary);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#modal-links a {
+    display: block;
+    background-color: var(--primary-bg-color);
+    color: var(--text-color-primary);
+    padding: 12px 15px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#modal-links a:hover {
+    background-color: var(--accent-color);
+    color: white;
+    transform: translateX(5px);
+}
+    </style>
+</head>
 <body>
 
-<a href="go:S123">Open Section</a>
+    <header>
+        <nav>
+            <div class="logo">FREEFLIX</div>
+            <!-- Replaced toggle switch with an icon toggler -->
+            <div id="theme-toggler" class="theme-icon-container">
+                <!-- Sun Icon for Light Mode -->
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <!-- Moon Icon for Dark Mode -->
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </div>
+        </nav>
+    </header>
 
+    <main>
+        <div id="matches-container">
+            <!-- Match cards will be dynamically inserted here by JavaScript -->
+        </div>
+    </main>
+
+    <!-- The Modal -->
+    <div id="links-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <h2>Available Streams</h2>
+            <div id="modal-links">
+                <!-- Stream links will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script>document.addEventListener('DOMContentLoaded', () => {
+
+    // --- UPDATED THEME SWITCHER ---
+    const themeToggler = document.getElementById('theme-toggler');
+
+    // Function to apply theme from localStorage
+    const applyTheme = () => {
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme === 'light-mode') {
+            document.body.classList.add('light-mode');
+        } else {
+            document.body.classList.remove('light-mode'); // Default to dark
+        }
+    };
+    
+    // Listen for a click on the toggler
+    themeToggler.addEventListener('click', () => {
+        document.body.classList.toggle('light-mode');
+        
+        // Save the new theme to localStorage
+        if (document.body.classList.contains('light-mode')) {
+            localStorage.setItem('theme', 'light-mode');
+        } else {
+            localStorage.setItem('theme', 'dark-mode');
+        }
+    });
+    
+    // Apply saved theme on initial load
+    applyTheme();
+
+
+    // --- MODAL LOGIC (No changes needed) ---
+    const modal = document.getElementById('links-modal');
+    const closeButton = document.querySelector('.close-button');
+    const modalLinksContainer = document.getElementById('modal-links');
+
+    closeButton.onclick = () => modal.style.display = "none";
+    window.onclick = (event) => {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
+    
+    function showModal(streams) {
+        modalLinksContainer.innerHTML = '';
+        if (streams && streams.length > 0) {
+            streams.forEach(stream => {
+                const link = document.createElement('a');
+                link.href = stream.url;
+                link.textContent = stream.name;
+                link.target = "_blank";
+                modalLinksContainer.appendChild(link);
+            });
+        } else {
+            modalLinksContainer.innerHTML = '<p>No streams available at the moment.</p>';
+        }
+        modal.style.display = "block";
+    }
+
+
+    // --- FETCH AND DISPLAY MATCHES (No changes needed) ---
+    const matchesContainer = document.getElementById('matches-container');
+
+    async function loadMatches() {
+        try {
+            const response = await fetch('data.json');
+            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+            const data = await response.json();
+            displayMatches(data.matches);
+        } catch (error) {
+            matchesContainer.innerHTML = `<p>Could not load match data. Please try again later.</p>`;
+            console.error("Fetch error:", error);
+        }
+    }
+
+    function displayMatches(matches) {
+        matchesContainer.innerHTML = '';
+        matches.forEach(match => {
+            const card = document.createElement('div');
+            card.className = 'match-card';
+            card.dataset.matchId = match.id;
+
+            const now = new Date();
+            const matchTime = new Date(match.matchTime);
+            const isLive = now >= matchTime;
+
+            if (isLive) card.classList.add('live');
+
+            card.innerHTML = `
+                <div class="event-title">${match.event}</div>
+                <div class="match-details">
+                    <div class="team">
+                        <img src="${match.team1Logo}" alt="${match.team1}" class="team-logo">
+                        <div class="team-name">${match.team1}</div>
+                    </div>
+                    <div class="vs">VS</div>
+                    <div class="team">
+                        <img src="${match.team2Logo}" alt="${match.team2}" class="team-logo">
+                        <div class="team-name">${match.team2}</div>
+                    </div>
+                </div>
+                <div class="status-box">
+                    ${isLive 
+                        ? `<div class="live-button">Live</div>` 
+                        : `<div class="countdown" id="countdown-${match.id}"></div>`
+                    }
+                </div>
+            `;
+            
+            matchesContainer.appendChild(card);
+
+            card.addEventListener('click', () => showModal(match.streams));
+
+            if (!isLive) startCountdown(match.id, matchTime);
+        });
+    }
+
+    function startCountdown(matchId, matchTime) {
+        const countdownElement = document.getElementById(`countdown-${matchId}`);
+        const cardElement = document.querySelector(`.match-card[data-match-id='${matchId}']`);
+
+        const interval = setInterval(() => {
+            const now = new Date().getTime();
+            const distance = matchTime - now;
+
+            if (distance < 0) {
+                clearInterval(interval);
+                countdownElement.parentElement.innerHTML = `<div class="live-button">Live</div>`;
+                if(cardElement) cardElement.classList.add('live');
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            let countdownText = '';
+            if (days > 0) countdownText += `${days}d `;
+            countdownText += `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+            
+            if(countdownElement) countdownElement.innerHTML = countdownText;
+
+        }, 1000);
+    }
+
+    // Initial load
+    loadMatches();
+});</script>
 </body>
 </html>
