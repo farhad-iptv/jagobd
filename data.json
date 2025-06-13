@@ -9,7 +9,7 @@
       "team2Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvFBfbMckrnE0xTn_e8oy6v9uHdB_RX-StdA&s",
       "matchTime": "2025-06-13T08:55:00Z",
       "streams": [
-        { "name": "Stream 1 - HD", "url": "#" },
+        { "name": "Stream 1 - HD", "url": "go:S123" },
         { "name": "Stream 2 - SD", "url": "#" },
         { "name": "Stream 3 - Backup", "url": "#" }
       ]
