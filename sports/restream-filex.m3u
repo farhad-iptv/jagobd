@@ -1,0 +1,509 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="110034" tvg-logo="https://www.lyngsat.com/logo/tv/hh/hum_tv_pk.png" group-title="No Category",PK | HUM TV HD
+https://restream-freeflix.vercel.app/api/filex/110034.m3u8
+#EXTINF:-1 tvg-id="110038" tvg-logo="https://www.lyngsat.com/logo/tv/aa/ary_digital_asia.png" group-title="No Category",PK | ARY DIGITAL HD
+https://restream-freeflix.vercel.app/api/filex/110038.m3u8
+#EXTINF:-1 tvg-id="110041" tvg-logo="https://www.lyngsat.com/logo/tv/gg/geo_tv_me.png" group-title="No Category",PK | GEO ENTERTAINMENT HD
+https://restream-freeflix.vercel.app/api/filex/110041.m3u8
+#EXTINF:-1 tvg-id="110044" tvg-logo="https://www.lyngsat.com/logo/tv/bb/bol-entertainment-pk.png" group-title="No Category",PK | BOL ENTERTAINMENT HD
+https://restream-freeflix.vercel.app/api/filex/110044.m3u8
+#EXTINF:-1 tvg-id="110047" tvg-logo="https://www.lyngsat.com/logo/tv/ee/express_entertainment_pk.png" group-title="No Category",PK | EXPRESS ENTERTAINMENT HD
+https://restream-freeflix.vercel.app/api/filex/110047.m3u8
+#EXTINF:-1 tvg-id="110049" tvg-logo="https://www.lyngsat.com/logo/tv/aa/ary_zindagi_pk.png" group-title="No Category",PK | ARY ZINDAGI
+https://restream-freeflix.vercel.app/api/filex/110049.m3u8
+#EXTINF:-1 tvg-id="110052" tvg-logo="https://www.lyngsat.com/logo/tv/gg/geo_kahani_pk.png" group-title="No Category",PK | GEO KAHANI
+https://restream-freeflix.vercel.app/api/filex/110052.m3u8
+#EXTINF:-1 tvg-id="110055" tvg-logo="https://www.lyngsat.com/logo/tv/aa/aaj_entertainment_pk.png" group-title="No Category",PK | AAJ ENTERTAINMENT
+https://restream-freeflix.vercel.app/api/filex/110055.m3u8
+#EXTINF:-1 tvg-id="110058" tvg-logo="https://www.lyngsat.com/logo/tv/hh/hum-sitaray-pk.png" group-title="No Category",PK | HUM SITARY
+https://restream-freeflix.vercel.app/api/filex/110058.m3u8
+#EXTINF:-1 tvg-id="110062" tvg-logo="https://www.lyngsat.com/logo/tv/aa/a-plus-pk.png" group-title="No Category",PK | A PLUS HD
+https://restream-freeflix.vercel.app/api/filex/110062.m3u8
+#EXTINF:-1 tvg-id="110065" tvg-logo="https://www.lyngsat.com/logo/tv/aa/atv-pk.png" group-title="No Category",PK | ATV HD
+https://restream-freeflix.vercel.app/api/filex/110065.m3u8
+#EXTINF:-1 tvg-id="110067" tvg-logo="https://www.lyngsat.com/logo/tv/pp/ptv-home-pk.png" group-title="No Category",PK | PTV HOME 
+https://restream-freeflix.vercel.app/api/filex/110067.m3u8
+#EXTINF:-1 tvg-id="110071" tvg-logo="https://www.lyngsat.com/logo/tv/aa/ary_qtv.png" group-title="No Category",PK | ARY QTV HD
+https://restream-freeflix.vercel.app/api/filex/110071.m3u8
+#EXTINF:-1 tvg-id="110075" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sab-tv-pk.png" group-title="No Category",PK | SAB TV HD
+https://restream-freeflix.vercel.app/api/filex/110075.m3u8
+#EXTINF:-1 tvg-id="110076" tvg-logo="https://www.lyngsat.com/logo/tv/aa/aan-tv-pk.png" group-title="No Category",PK | AAN TV HD
+https://restream-freeflix.vercel.app/api/filex/110076.m3u8
+#EXTINF:-1 tvg-id="110079" tvg-logo="https://www.lyngsat.com/logo/tv/mm/mun-tv-pk.png" group-title="No Category",PK | MUN TV
+https://restream-freeflix.vercel.app/api/filex/110079.m3u8
+#EXTINF:-1 tvg-id="110081" tvg-logo="https://www.lyngsat.com/logo/tv/kk/ktn_tv_pk.png" group-title="No Category",PK | KTN TV
+https://restream-freeflix.vercel.app/api/filex/110081.m3u8
+#EXTINF:-1 tvg-id="110084" tvg-logo="" group-title="No Category",PK | PASHTO 1 TV
+https://restream-freeflix.vercel.app/api/filex/110084.m3u8
+#EXTINF:-1 tvg-id="110090" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sindh_tv.png" group-title="No Category",PK | SINDH TV
+https://restream-freeflix.vercel.app/api/filex/110090.m3u8
+#EXTINF:-1 tvg-id="110091" tvg-logo="https://www.lyngsat.com/logo/tv/aa/aur-life-hd-pk.png" group-title="No Category",PK | AUR LIVE
+https://restream-freeflix.vercel.app/api/filex/110091.m3u8
+#EXTINF:-1 tvg-id="110093" tvg-logo="https://www.lyngsat.com/logo/tv/ss/see_tv_pk_hd.png" group-title="No Category",PK | SEE TV HD
+https://restream-freeflix.vercel.app/api/filex/110093.m3u8
+#EXTINF:-1 tvg-id="110094" tvg-logo="https://www.lyngsat.com/logo/tv/gg/green-entertainment-pk.png" group-title="No Category",PK | GREEN TV
+https://restream-freeflix.vercel.app/api/filex/110094.m3u8
+#EXTINF:-1 tvg-id="110095" tvg-logo="https://www.lyngsat.com/logo/tv/ww/waseb_tv.png" group-title="No Category",PK |  WASEB TV
+https://restream-freeflix.vercel.app/api/filex/110095.m3u8
+#EXTINF:-1 tvg-id="110100" tvg-logo="https://www.lyngsat.com/logo/tv/ff/filmax_pk.png" group-title="No Category",PK | FILMAX
+https://restream-freeflix.vercel.app/api/filex/110100.m3u8
+#EXTINF:-1 tvg-id="110103" tvg-logo="" group-title="No Category",PK | LTN FAMILY
+https://restream-freeflix.vercel.app/api/filex/110103.m3u8
+#EXTINF:-1 tvg-id="110107" tvg-logo="https://www.lyngsat.com/logo/tv/ff/filmazia_pk.png" group-title="No Category",PK | FILMAZIA
+https://restream-freeflix.vercel.app/api/filex/110107.m3u8
+#EXTINF:-1 tvg-id="110114" tvg-logo="https://www.lyngsat.com/logo/tv/ff/film-world-pk.png" group-title="No Category",PK | FILM WORLD
+https://restream-freeflix.vercel.app/api/filex/110114.m3u8
+#EXTINF:-1 tvg-id="189484" tvg-logo="https://www.lyngsat.com/logo/tv/kk/khyber-middle-east-tv-pk.png" group-title="No Category",PK | KHYBER TV
+https://restream-freeflix.vercel.app/api/filex/189484.m3u8
+#EXTINF:-1 tvg-id="190764" tvg-logo="" group-title="No Category",PK | INPLUS
+https://restream-freeflix.vercel.app/api/filex/190764.m3u8
+#EXTINF:-1 tvg-id="190765" tvg-logo="" group-title="No Category",PK | APNA TV
+https://restream-freeflix.vercel.app/api/filex/190765.m3u8
+#EXTINF:-1 tvg-id="190766" tvg-logo="" group-title="No Category",PK | A 1 TV
+https://restream-freeflix.vercel.app/api/filex/190766.m3u8
+#EXTINF:-1 tvg-id="453389" tvg-logo="" group-title="No Category",PK | KAY 2
+https://restream-freeflix.vercel.app/api/filex/453389.m3u8
+#EXTINF:-1 tvg-id="456660" tvg-logo="" group-title="No Category",PK | TV ONE
+https://restream-freeflix.vercel.app/api/filex/456660.m3u8
+#EXTINF:-1 tvg-id="480443" tvg-logo="" group-title="No Category",PK | HUM EUROPE HD
+https://restream-freeflix.vercel.app/api/filex/480443.m3u8
+#EXTINF:-1 tvg-id="110046" tvg-logo="" group-title="No Category",PK | SET ENTERTAINMENT
+https://restream-freeflix.vercel.app/api/filex/110046.m3u8
+#EXTINF:-1 tvg-id="110068" tvg-logo="" group-title="No Category",PK | DISCOVERY PAKISTAN
+https://restream-freeflix.vercel.app/api/filex/110068.m3u8
+#EXTINF:-1 tvg-id="333168" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2023-05/845f246ff9105ba49eec3b6d1c00c427.png" group-title="No Category",DK: V Sport Golf
+https://restream-freeflix.vercel.app/api/filex/333168.m3u8
+#EXTINF:-1 tvg-id="333100" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-07/0de9b5c2e3ed2fc0346a675d5bfde849.png" group-title="No Category",SE: V Sport Golf
+https://restream-freeflix.vercel.app/api/filex/333100.m3u8
+#EXTINF:-1 tvg-id="332957" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2022-05/5aa846ad8e3b339954183db98908c80a.png" group-title="No Category",CZ: Golf Channel
+https://restream-freeflix.vercel.app/api/filex/332957.m3u8
+#EXTINF:-1 tvg-id="303691" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-07/afe050374551a2767019f331cf74dc05.png" group-title="No Category",NL: Ziggo Sport Golf
+https://restream-freeflix.vercel.app/api/filex/303691.m3u8
+#EXTINF:-1 tvg-id="316237" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-07/5901f5d9b6bb1640c6e7e8a1b44e138e.png" group-title="No Category",PL: Golf Channel
+https://restream-freeflix.vercel.app/api/filex/316237.m3u8
+#EXTINF:-1 tvg-id="303346" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-07/2f7cf34df9b0ceec221e79a887171cf9.png" group-title="No Category",LA: Golf Channel
+https://restream-freeflix.vercel.app/api/filex/303346.m3u8
+#EXTINF:-1 tvg-id="303042" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2023-08/913be3dd5506bb664db6b276ae3131be.png" group-title="No Category",EX-YU: Sport Klub Golf
+https://restream-freeflix.vercel.app/api/filex/303042.m3u8
+#EXTINF:-1 tvg-id="301901" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/3d5b56071d971d8a599b10a1899d5d3a.png" group-title="No Category",FR: GOLF+
+https://restream-freeflix.vercel.app/api/filex/301901.m3u8
+#EXTINF:-1 tvg-id="301900" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-08/004c3db0072c16475396c8bc5757637e.png" group-title="No Category",FR: Golf Channel
+https://restream-freeflix.vercel.app/api/filex/301900.m3u8
+#EXTINF:-1 tvg-id="293494" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2023-05/4563870d73aeb6a4e7dc80094393537e.png" group-title="No Category",DE: Sky Sport Golf
+https://restream-freeflix.vercel.app/api/filex/293494.m3u8
+#EXTINF:-1 tvg-id="187438" tvg-logo="https://i.imgur.com/VJy6Mjs.png" group-title="No Category",NL | ZIGGO SPORT  GOLF
+https://restream-freeflix.vercel.app/api/filex/187438.m3u8
+#EXTINF:-1 tvg-id="290420" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/5acb0ff26afa4f347663d42261af36bf.png" group-title="No Category",UK: Sky Sports Golf
+https://restream-freeflix.vercel.app/api/filex/290420.m3u8
+#EXTINF:-1 tvg-id="291057" tvg-logo="http://s3.i3ns.net/cs/etc/blank-icon.png" group-title="No Category",US: Golf Kingdom
+https://restream-freeflix.vercel.app/api/filex/291057.m3u8
+#EXTINF:-1 tvg-id="293283" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2022-01/c261a5ce9a1cba8b6aaea018f04dcf84.png" group-title="No Category",IT: Sky Sport Golf
+https://restream-freeflix.vercel.app/api/filex/293283.m3u8
+#EXTINF:-1 tvg-id="291617" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-07/5164471a041a09ae2a58dbfc5978f766.png" group-title="No Category",US: Golf Channel / NBC Golf
+https://restream-freeflix.vercel.app/api/filex/291617.m3u8
+#EXTINF:-1 tvg-id="250199" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGblnHUtV4s3-_Xsa4X3AUO3pKnjfoFoZRxA&usqp=CAU" group-title="No Category",NZ | SKY SPORTS CRICKET FHD
+https://restream-freeflix.vercel.app/api/filex/250199.m3u8
+#EXTINF:-1 tvg-id="190767" tvg-logo="https://www.lyngsat.com/logo/tv/aa/a-sports-pk.png" group-title="No Category",PK | ARY SPORTS HD
+https://restream-freeflix.vercel.app/api/filex/190767.m3u8
+#EXTINF:-1 tvg-id="53044" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/5b9d9ddbf95526d59c2fdd6725253646.png" group-title="No Category",AF | SUPER SPORTS CRICKET 
+https://restream-freeflix.vercel.app/api/filex/53044.m3u8
+#EXTINF:-1 tvg-id="52077" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sports-18-in.png" group-title="No Category",IN | 18 SPORTS HD
+https://restream-freeflix.vercel.app/api/filex/52077.m3u8
+#EXTINF:-1 tvg-id="52080" tvg-logo="https://www.lyngsat.com/logo/tv/gg/geo_super.png" group-title="No Category",PK | GEO SUPER HD
+https://restream-freeflix.vercel.app/api/filex/52080.m3u8
+#EXTINF:-1 tvg-id="52083" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sony-sports-ten-1-in.png" group-title="No Category",IN | SONY TEN 1 HD
+https://restream-freeflix.vercel.app/api/filex/52083.m3u8
+#EXTINF:-1 tvg-id="52085" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sony-sports-ten-2-in.png" group-title="No Category",IN | SONY TEN 2 HD
+https://restream-freeflix.vercel.app/api/filex/52085.m3u8
+#EXTINF:-1 tvg-id="52086" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sony-sports-ten-3-in.png" group-title="No Category",IN | SONY TEN 3 HD
+https://restream-freeflix.vercel.app/api/filex/52086.m3u8
+#EXTINF:-1 tvg-id="52094" tvg-logo="https://www.lyngsat.com/logo/tv/ss/star-sports-1-hk-in.png" group-title="No Category",IN | STAR SPORTS 1 HD
+https://restream-freeflix.vercel.app/api/filex/52094.m3u8
+#EXTINF:-1 tvg-id="52096" tvg-logo="https://www.lyngsat.com/logo/tv/ss/star-sports-2-hk-in.png" group-title="No Category",IN | STAR SPORTS 2 HD
+https://restream-freeflix.vercel.app/api/filex/52096.m3u8
+#EXTINF:-1 tvg-id="52098" tvg-logo="https://i.ibb.co/rbgvLYd/Star-Sports-Select-1-X-Vision.png" group-title="No Category",IN | STAR SPORTS SELECT 1 HD
+https://restream-freeflix.vercel.app/api/filex/52098.m3u8
+#EXTINF:-1 tvg-id="52100" tvg-logo="https://i.ibb.co/dPP0vQS/Star-Sports-Select-2-X-Vision.png" group-title="No Category",IN | STAR SPORTS SELECT 2 HD
+https://restream-freeflix.vercel.app/api/filex/52100.m3u8
+#EXTINF:-1 tvg-id="52106" tvg-logo="https://www.lyngsat.com/logo/tv/tt/ten_sports_in_pakistan.png" group-title="No Category",IN | TEN SPORTS HD
+https://restream-freeflix.vercel.app/api/filex/52106.m3u8
+#EXTINF:-1 tvg-id="62393" tvg-logo="https://www.lyngsat.com/logo/tv/aa/a-sports-pk.png" group-title="No Category",PK | ARY SPORTS SD.
+https://restream-freeflix.vercel.app/api/filex/62393.m3u8
+#EXTINF:-1 tvg-id="90342" tvg-logo="" group-title="No Category",IN | STAR SPORTS 1 HINDI HD 
+https://restream-freeflix.vercel.app/api/filex/90342.m3u8
+#EXTINF:-1 tvg-id="250211" tvg-logo="https://www.lyngsat.com/logo/tv/pp/ptv_sports_pk.png" group-title="No Category",PK | PTV SPORTS SD
+https://restream-freeflix.vercel.app/api/filex/250211.m3u8
+#EXTINF:-1 tvg-id="277207" tvg-logo="https://www.lyngsat.com/logo/tv/ff/fast-sports-pk.png" group-title="No Category",IN | FAST SPORTS 
+https://restream-freeflix.vercel.app/api/filex/277207.m3u8
+#EXTINF:-1 tvg-id="297577" tvg-logo="https://filex.vip:443/images/_HmHo_P7L3IdYO67j5S70HslD6BC0k2Qu3MvF_Z5NnMpGtOkRH9y6nHeUNQPJ4hBYp97V9EwNXSBxlnUbmxOiw.png" group-title="No Category",IN | EURO SPORTS
+https://restream-freeflix.vercel.app/api/filex/297577.m3u8
+#EXTINF:-1 tvg-id="453434" tvg-logo="" group-title="No Category",PK | PTV SPORTS HD
+https://restream-freeflix.vercel.app/api/filex/453434.m3u8
+#EXTINF:-1 tvg-id="453435" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sony-sports-ten-5-in.png" group-title="No Category",IN | SONY TEN 5 HD
+https://restream-freeflix.vercel.app/api/filex/453435.m3u8
+#EXTINF:-1 tvg-id="247166" tvg-logo="" group-title="No Category",AU | FOX CRICKET 501
+https://restream-freeflix.vercel.app/api/filex/247166.m3u8
+#EXTINF:-1 tvg-id="451415" tvg-logo="" group-title="No Category",IN | ASTRO CRICKET
+https://restream-freeflix.vercel.app/api/filex/451415.m3u8
+#EXTINF:-1 tvg-id="111409" tvg-logo="http://filex.tv:8080/images/1adcf489ec18dfcb479c92b2a480425e.png" group-title="No Category",BD | T SPORTS
+https://restream-freeflix.vercel.app/api/filex/111409.m3u8
+#EXTINF:-1 tvg-id="52109" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2023-05/b8b56a633aad6900e1565ed87811f342.png" group-title="No Category",IN | WILLOW CRICKET HD
+https://restream-freeflix.vercel.app/api/filex/52109.m3u8
+#EXTINF:-1 tvg-id="500837" tvg-logo="" group-title="No Category",IN | STAR SPORTS 1 HINDI FHD
+https://restream-freeflix.vercel.app/api/filex/500837.m3u8
+#EXTINF:-1 tvg-id="509255" tvg-logo="" group-title="No Category",UFC FIGHT HD (1)
+https://restream-freeflix.vercel.app/api/filex/509255.m3u8
+#EXTINF:-1 tvg-id="509256" tvg-logo="" group-title="No Category",UFC FIGHT HD (2)
+https://restream-freeflix.vercel.app/api/filex/509256.m3u8
+#EXTINF:-1 tvg-id="509257" tvg-logo="" group-title="No Category",UFC FIGHT HD (3)
+https://restream-freeflix.vercel.app/api/filex/509257.m3u8
+#EXTINF:-1 tvg-id="509258" tvg-logo="" group-title="No Category",WWE HD (1)
+https://restream-freeflix.vercel.app/api/filex/509258.m3u8
+#EXTINF:-1 tvg-id="509259" tvg-logo="" group-title="No Category",WWE HD (2)
+https://restream-freeflix.vercel.app/api/filex/509259.m3u8
+#EXTINF:-1 tvg-id="509260" tvg-logo="" group-title="No Category",WWE HD (3)
+https://restream-freeflix.vercel.app/api/filex/509260.m3u8
+#EXTINF:-1 tvg-id="509503" tvg-logo="" group-title="No Category",FANCODE SPORTS
+https://restream-freeflix.vercel.app/api/filex/509503.m3u8
+#EXTINF:-1 tvg-id="529243" tvg-logo="https://www.lyngsat.com/logo/tv/tt/tnt-sports-uk-us-uk.png" group-title="No Category",TNT SPOTS 1 HD
+https://restream-freeflix.vercel.app/api/filex/529243.m3u8
+#EXTINF:-1 tvg-id="529247" tvg-logo="https://www.lyngsat.com/logo/tv/tt/tnt-sports-uk-us-uk.png" group-title="No Category",TNT SPOTS 2 HD
+https://restream-freeflix.vercel.app/api/filex/529247.m3u8
+#EXTINF:-1 tvg-id="529251" tvg-logo="https://www.lyngsat.com/logo/tv/tt/tnt-sports-uk-us-uk.png" group-title="No Category",TNT SPOTS 3 HD
+https://restream-freeflix.vercel.app/api/filex/529251.m3u8
+#EXTINF:-1 tvg-id="13" tvg-logo="https://www.lyngsat.com/logo/tv/zz/zee-tv-in.png" group-title="No Category",IN | ZEE TV HD
+https://restream-freeflix.vercel.app/api/filex/13.m3u8
+#EXTINF:-1 tvg-id="15" tvg-logo="https://www.lyngsat.com/logo/tv/ss/set_in.png" group-title="No Category",IN | SONY SET HD
+https://restream-freeflix.vercel.app/api/filex/15.m3u8
+#EXTINF:-1 tvg-id="17" tvg-logo="https://www.lyngsat.com/logo/tv/ss/star-plus-hk.png" group-title="No Category",IN | STAR PLUS HD
+https://restream-freeflix.vercel.app/api/filex/17.m3u8
+#EXTINF:-1 tvg-id="19" tvg-logo="https://www.lyngsat.com/logo/tv/cc/colors-in.png" group-title="No Category",IN | COLORS HD
+https://restream-freeflix.vercel.app/api/filex/19.m3u8
+#EXTINF:-1 tvg-id="21" tvg-logo="https://www.lyngsat.com/logo/tv/ss/star-bharat-hk-in.png" group-title="No Category",IN | STAR BHARAT HD
+https://restream-freeflix.vercel.app/api/filex/21.m3u8
+#EXTINF:-1 tvg-id="23" tvg-logo="https://www.lyngsat.com/logo/tv/aa/and_tv_in.png" group-title="No Category",IN | & TV HD
+https://restream-freeflix.vercel.app/api/filex/23.m3u8
+#EXTINF:-1 tvg-id="25" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sony-sab-tv-in.png" group-title="No Category",IN| SONY SAB HD
+https://restream-freeflix.vercel.app/api/filex/25.m3u8
+#EXTINF:-1 tvg-id="28" tvg-logo="https://www.lyngsat.com/logo/tv/ss/star_gold_in_select_hd.png" group-title="No Category",IN | STAR GOLD SELECT HD
+https://restream-freeflix.vercel.app/api/filex/28.m3u8
+#EXTINF:-1 tvg-id="29" tvg-logo="https://www.lyngsat.com/logo/tv/ss/star-gold-hd-india-in.png" group-title="No Category",IN | STAR GOLD HD
+https://restream-freeflix.vercel.app/api/filex/29.m3u8
+#EXTINF:-1 tvg-id="31" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Star_Gold_2.svg/1376px-Star_Gold_2.svg.png" group-title="No Category",IN | STAR GOLD 2 HD
+https://restream-freeflix.vercel.app/api/filex/31.m3u8
+#EXTINF:-1 tvg-id="32" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_MAX2.png" group-title="No Category",IN | SONY MAX 2 HD
+https://restream-freeflix.vercel.app/api/filex/32.m3u8
+#EXTINF:-1 tvg-id="33" tvg-logo="http://filex.tv:8080/images/93a3eb73578a3d9fc24502ad866b1d7f.png" group-title="No Category",IN | SONY MAX HD
+https://restream-freeflix.vercel.app/api/filex/33.m3u8
+#EXTINF:-1 tvg-id="35" tvg-logo="http://filex.tv:8080/images/06ae3d7e2037a51f743e3b718f5f70e9.png" group-title="No Category",IN | & PICTURES HD
+https://restream-freeflix.vercel.app/api/filex/35.m3u8
+#EXTINF:-1 tvg-id="37" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Cinema_HD.png" group-title="No Category",IN | ZEE CINEMA HD
+https://restream-freeflix.vercel.app/api/filex/37.m3u8
+#EXTINF:-1 tvg-id="43" tvg-logo="http://filex.tv:8080/images/c540853bcc71d20eb039cfa614b4b900.png" group-title="No Category",IN | COLORS CINEPLEX SUPERHIT
+https://restream-freeflix.vercel.app/api/filex/43.m3u8
+#EXTINF:-1 tvg-id="50" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Action.png" group-title="No Category",IN | ZEE ACTION HD
+https://restream-freeflix.vercel.app/api/filex/50.m3u8
+#EXTINF:-1 tvg-id="52" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrYYOBNUSNFkPvXP7wOCSbKt45IULkf6e66Q&usqp=CAU" group-title="No Category",IN | COLORS RISHTE HD
+https://restream-freeflix.vercel.app/api/filex/52.m3u8
+#EXTINF:-1 tvg-id="54" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Anmol_Cinema.png" group-title="No Category",IN | ZEE ANMOL CINEMA HD
+https://restream-freeflix.vercel.app/api/filex/54.m3u8
+#EXTINF:-1 tvg-id="55" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuANx7s-Dxxy35uMqXRag0lUXvXhc19y7DCw&usqp=CAU" group-title="No Category",IN | & FLIX HD
+https://restream-freeflix.vercel.app/api/filex/55.m3u8
+#EXTINF:-1 tvg-id="56" tvg-logo="http://sagraecdnems06.cdnsrv.jio.com/jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Pal.png" group-title="No Category",IN | SONY PAL HD
+https://restream-freeflix.vercel.app/api/filex/56.m3u8
+#EXTINF:-1 tvg-id="58" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu18Rs2fkZ8b_AmXmYEOsxiQlicYY9n4ukgQ&usqp=CAU" group-title="No Category",IN | COLOUR CINEPLEX BOLLYWOOD HD
+https://restream-freeflix.vercel.app/api/filex/58.m3u8
+#EXTINF:-1 tvg-id="60" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL-ajdmye9QnGBqgEjmP6TiNTkV7trgw2jwQ&usqp=CAU" group-title="No Category",IN | B4U MOVIE HD
+https://restream-freeflix.vercel.app/api/filex/60.m3u8
+#EXTINF:-1 tvg-id="75" tvg-logo="http://filex.tv:8080/images/de357c9c796e9a5761b57088271d7a06.png" group-title="No Category",IN | SONY PIX HD
+https://restream-freeflix.vercel.app/api/filex/75.m3u8
+#EXTINF:-1 tvg-id="103" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2024-08/0745eefbd8a17542003f01bf22735da0.png" group-title="No Category",IN | STAR UTSAV HD
+https://restream-freeflix.vercel.app/api/filex/103.m3u8
+#EXTINF:-1 tvg-id="113" tvg-logo="https://i.imgur.com/LP27MEL.png" group-title="No Category",IN | MOVIE NOW HD
+https://restream-freeflix.vercel.app/api/filex/113.m3u8
+#EXTINF:-1 tvg-id="52223" tvg-logo="https://imagesstartv.whatsonindia.com/dasimages/channel/landscape/100x75/d3ZNcauZ.png" group-title="No Category",IN | STAR MOVIES HD
+https://restream-freeflix.vercel.app/api/filex/52223.m3u8
+#EXTINF:-1 tvg-id="52225" tvg-logo="https://tvscheduleindia.com/assets/brand/channels/i7ifGMFv.png" group-title="No Category",IN | STAR MOVIES SELECT ENGLISH HD
+https://restream-freeflix.vercel.app/api/filex/52225.m3u8
+#EXTINF:-1 tvg-id="52404" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/7b/BIG_Magic_Logo.jpg" group-title="No Category",IN | BIG MAGIC HD
+https://restream-freeflix.vercel.app/api/filex/52404.m3u8
+#EXTINF:-1 tvg-id="53043" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMeDsn6WxeHhO_0LNmydM3Vw0qGoWREJtIxw&usqp=CAU" group-title="No Category",IN | & PRIVE HD
+https://restream-freeflix.vercel.app/api/filex/53043.m3u8
+#EXTINF:-1 tvg-id="87330" tvg-logo="" group-title="No Category",IN | COLORS INFINITY HD
+https://restream-freeflix.vercel.app/api/filex/87330.m3u8
+#EXTINF:-1 tvg-id="131564" tvg-logo="" group-title="No Category",IN | PTC PUNJABI HD
+https://restream-freeflix.vercel.app/api/filex/131564.m3u8
+#EXTINF:-1 tvg-id="131565" tvg-logo="" group-title="No Category",IN | PTC SIMRAN HD
+https://restream-freeflix.vercel.app/api/filex/131565.m3u8
+#EXTINF:-1 tvg-id="142889" tvg-logo="" group-title="No Category",IN | SHEMAROO TV HD
+https://restream-freeflix.vercel.app/api/filex/142889.m3u8
+#EXTINF:-1 tvg-id="189473" tvg-logo="" group-title="No Category",IN | STAR GOLD THRILLS HD
+https://restream-freeflix.vercel.app/api/filex/189473.m3u8
+#EXTINF:-1 tvg-id="189474" tvg-logo="" group-title="No Category",IN | STAR GOLD ROMANCE HD
+https://restream-freeflix.vercel.app/api/filex/189474.m3u8
+#EXTINF:-1 tvg-id="453382" tvg-logo="" group-title="No Category",IN | MANORANJAN TV
+https://restream-freeflix.vercel.app/api/filex/453382.m3u8
+#EXTINF:-1 tvg-id="495596" tvg-logo="" group-title="No Category",IN | FOOD FOOD
+https://restream-freeflix.vercel.app/api/filex/495596.m3u8
+#EXTINF:-1 tvg-id="279284" tvg-logo="http://103.184.192.164:5001/jtvimage/Zee_Cafe_HD.png" group-title="No Category",IN | ZEE CAFE HD
+https://restream-freeflix.vercel.app/api/filex/279284.m3u8
+#EXTINF:-1 tvg-id="496178" tvg-logo="" group-title="No Category",IN | ZEE CLASSIC
+https://restream-freeflix.vercel.app/api/filex/496178.m3u8
+#EXTINF:-1 tvg-id="496689" tvg-logo="https://filex.vip:443/images/ch7z1jaOyxxTknrelOaX7HQQ_3DW_fDah88toS_7bKhqRLOTv6Z6jHPiwLycPZs8puHwOaPuAWMkcU0S4363y5k9FPZzqkvHy4fsUk9CRXU.png" group-title="No Category",IN | SONY SET FHD 1
+https://restream-freeflix.vercel.app/api/filex/496689.m3u8
+#EXTINF:-1 tvg-id="497242" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2023-05/3c1f85ac8e5ec5f6339c6da0c47b7103.png" group-title="No Category",IN: Asianet News
+https://restream-freeflix.vercel.app/api/filex/497242.m3u8
+#EXTINF:-1 tvg-id="497243" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2022-04/fd3d465946186166f84982cd2312c198.png" group-title="No Category",IN: Asianet News Tamil
+https://restream-freeflix.vercel.app/api/filex/497243.m3u8
+#EXTINF:-1 tvg-id="497244" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2023-05/bb181f1491b27a4fd709f97c80c00476.jpg" group-title="No Category",IN: Asianet Suvarna News
+https://restream-freeflix.vercel.app/api/filex/497244.m3u8
+#EXTINF:-1 tvg-id="497245" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/cd73513ab34fd0e22bf7d4f7cbedf62d.png" group-title="No Category",IN: Bansal News
+https://restream-freeflix.vercel.app/api/filex/497245.m3u8
+#EXTINF:-1 tvg-id="497246" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/34add1edff1f19b30b0b9e22d41407de.png" group-title="No Category",IN: CNBC Awaaz
+https://restream-freeflix.vercel.app/api/filex/497246.m3u8
+#EXTINF:-1 tvg-id="497247" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/388ce1e6457a331d9a68d5c59634c584.png" group-title="No Category",IN: CNBC Bajar
+https://restream-freeflix.vercel.app/api/filex/497247.m3u8
+#EXTINF:-1 tvg-id="497248" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/65a23d8e6f37fb9b6ba3f94b958dcdbf.png" group-title="No Category",IN: CNBC TV 18
+https://restream-freeflix.vercel.app/api/filex/497248.m3u8
+#EXTINF:-1 tvg-id="497249" tvg-logo="http://s3.i3ns.net/cs/etc/blank-icon.png" group-title="No Category",IN: CNN News 18
+https://restream-freeflix.vercel.app/api/filex/497249.m3u8
+#EXTINF:-1 tvg-id="497250" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/6446fd446279b4d4f2be40b52412b27a.png" group-title="No Category",IN: CVR News
+https://restream-freeflix.vercel.app/api/filex/497250.m3u8
+#EXTINF:-1 tvg-id="497251" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/a532a1f64e91ea4ead84ff678e1592b1.png" group-title="No Category",IN: DD India
+https://restream-freeflix.vercel.app/api/filex/497251.m3u8
+#EXTINF:-1 tvg-id="497252" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/e5e64952c42751c286c68c293eed2006.png" group-title="No Category",IN: DD Malayalam
+https://restream-freeflix.vercel.app/api/filex/497252.m3u8
+#EXTINF:-1 tvg-id="497253" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/a9182065b952abc2263ed53af8259479.png" group-title="No Category",IN: DD News
+https://restream-freeflix.vercel.app/api/filex/497253.m3u8
+#EXTINF:-1 tvg-id="497254" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/ad76cd879232d530ba344e17e4d4b993.png" group-title="No Category",IN: ET Now
+https://restream-freeflix.vercel.app/api/filex/497254.m3u8
+#EXTINF:-1 tvg-id="497255" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2022-07/93df1e40abe657816295c7ed4593603f.jpeg" group-title="No Category",IN: Good News Today
+https://restream-freeflix.vercel.app/api/filex/497255.m3u8
+#EXTINF:-1 tvg-id="497256" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/a8d0958a45ea16ecea0e9a41ae42c836.png" group-title="No Category",IN: India News
+https://restream-freeflix.vercel.app/api/filex/497256.m3u8
+#EXTINF:-1 tvg-id="497257" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2023-09/73c0e20cdd20df22aa69088931c3b4c7.jpeg" group-title="No Category",IN: India News Rajasthan
+https://restream-freeflix.vercel.app/api/filex/497257.m3u8
+#EXTINF:-1 tvg-id="497258" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/605a6f1ad45e50c8dec82884a85c9a8a.png" group-title="No Category",IN: India Today
+https://restream-freeflix.vercel.app/api/filex/497258.m3u8
+#EXTINF:-1 tvg-id="497259" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/3aa3d8bc970ec9ab9ca530865a4907ac.png" group-title="No Category",IN: India TV
+https://restream-freeflix.vercel.app/api/filex/497259.m3u8
+#EXTINF:-1 tvg-id="497260" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2023-05/a3d43a0a5ebce9e53b2d5f9a3b3d22eb.png" group-title="No Category",IN: K News India
+https://restream-freeflix.vercel.app/api/filex/497260.m3u8
+#EXTINF:-1 tvg-id="497261" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2022-02/19f39f51241dbfe565f8453726154f68.png" group-title="No Category",IN: Khabrain Abhi Tak
+https://restream-freeflix.vercel.app/api/filex/497261.m3u8
+#EXTINF:-1 tvg-id="497262" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2022-05/f0ee5348027146b4c16b1af3413f28d1.png" group-title="No Category",IN: Lok Sabha TV
+https://restream-freeflix.vercel.app/api/filex/497262.m3u8
+#EXTINF:-1 tvg-id="497263" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2022-02/123a158b16c60c67026dbbd608850123.png" group-title="No Category",IN: Mathrubhumi News
+https://restream-freeflix.vercel.app/api/filex/497263.m3u8
+#EXTINF:-1 tvg-id="497264" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/6da706192ed41078abbdf6bdb0d86fe0.png" group-title="No Category",IN: Media One
+https://restream-freeflix.vercel.app/api/filex/497264.m3u8
+#EXTINF:-1 tvg-id="497265" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-12/496f59ed3a3addec09ad8af54fd489dc.png" group-title="No Category",IN: NDTV 24X7
+https://restream-freeflix.vercel.app/api/filex/497265.m3u8
+#EXTINF:-1 tvg-id="497266" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/b13c4d6511c08a518cdc7e53c36575be.png" group-title="No Category",IN: NDTV India
+https://restream-freeflix.vercel.app/api/filex/497266.m3u8
+#EXTINF:-1 tvg-id="497267" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2023-05/caa7e4145e5997cc3fe36f9c5ba20b31.png" group-title="No Category",IN: News 7 Tamil
+https://restream-freeflix.vercel.app/api/filex/497267.m3u8
+#EXTINF:-1 tvg-id="497268" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/8da29f88c2ceeb8c6cffaed52a7bd94d.png" group-title="No Category",IN: News 18 Gujarati
+https://restream-freeflix.vercel.app/api/filex/497268.m3u8
+#EXTINF:-1 tvg-id="497269" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2023-07/9a820c7972512f179fbfedff4a2d256a.png" group-title="No Category",IN: News 18 Kannada
+https://restream-freeflix.vercel.app/api/filex/497269.m3u8
+#EXTINF:-1 tvg-id="497270" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2023-05/6cfbf36a04bc0a192795eb6be6dbdb3b.png" group-title="No Category",IN: News 18 Lokmat
+https://restream-freeflix.vercel.app/api/filex/497270.m3u8
+#EXTINF:-1 tvg-id="497271" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2022-02/868f9af6f14d9f113a17eccd28a7655c.png" group-title="No Category",IN: News 18 Malayalam
+https://restream-freeflix.vercel.app/api/filex/497271.m3u8
+#EXTINF:-1 tvg-id="497272" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2022-07/c05f054b4189eb8fad513a19ca970078.jpeg" group-title="No Category",IN: News 18 Punjab
+https://restream-freeflix.vercel.app/api/filex/497272.m3u8
+#EXTINF:-1 tvg-id="497273" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2023-05/20fab0bad66f91a6abf2e72938071f9e.png" group-title="No Category",IN: News 18 Tamil
+https://restream-freeflix.vercel.app/api/filex/497273.m3u8
+#EXTINF:-1 tvg-id="497274" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2022-02/334e08c69dd06a94653eca3c8fdea2f9.png" group-title="No Category",IN: News 18 Uttar Pradesh & Uttarakhand
+https://restream-freeflix.vercel.app/api/filex/497274.m3u8
+#EXTINF:-1 tvg-id="497275" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/b6c52d4dbc0413e8d5b596d8bddad2e3.png" group-title="No Category",IN: News 24
+https://restream-freeflix.vercel.app/api/filex/497275.m3u8
+#EXTINF:-1 tvg-id="497276" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2022-02/10ee58a7d3bfab98c84935de70beef73.png" group-title="No Category",IN: Puthiya Thalaimurai
+https://restream-freeflix.vercel.app/api/filex/497276.m3u8
+#EXTINF:-1 tvg-id="497277" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2023-09/0180a7757679a7804d6ee75ec4c8791e.png" group-title="No Category",IN: Raj News
+https://restream-freeflix.vercel.app/api/filex/497277.m3u8
+#EXTINF:-1 tvg-id="497278" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/99680f1a9114d00686a9f812a69f002d.png" group-title="No Category",IN: Reporter
+https://restream-freeflix.vercel.app/api/filex/497278.m3u8
+#EXTINF:-1 tvg-id="497279" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/da4f866180422b1db1f1132c046b5a16.png" group-title="No Category",IN: Republic TV
+https://restream-freeflix.vercel.app/api/filex/497279.m3u8
+#EXTINF:-1 tvg-id="497280" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/d0f409b84422ab1ee589ae7188ebc911.png" group-title="No Category",IN: Sadhna Plus News
+https://restream-freeflix.vercel.app/api/filex/497280.m3u8
+#EXTINF:-1 tvg-id="497281" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2023-03/9696bf3cb4acfd9d63e8628d515e824a.jpg" group-title="No Category",IN: Sahara Samay
+https://restream-freeflix.vercel.app/api/filex/497281.m3u8
+#EXTINF:-1 tvg-id="497282" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2023-07/1950c7ecb83a5302231a1c556eef1ebd.png" group-title="No Category",IN: Samachar Plus Rajasthan
+https://restream-freeflix.vercel.app/api/filex/497282.m3u8
+#EXTINF:-1 tvg-id="497283" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2022-04/1f7e6af71c53b1b7853876efa23acb64.png" group-title="No Category",IN: Sun News
+https://restream-freeflix.vercel.app/api/filex/497283.m3u8
+#EXTINF:-1 tvg-id="497284" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/5958ed44028a113a0503a1ada6c6d6fa.png" group-title="No Category",IN: Times Now
+https://restream-freeflix.vercel.app/api/filex/497284.m3u8
+#EXTINF:-1 tvg-id="497285" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/5d788e159275192ad8fe55974d48064b.png" group-title="No Category",IN: TV 9 Gujarati
+https://restream-freeflix.vercel.app/api/filex/497285.m3u8
+#EXTINF:-1 tvg-id="497286" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-12/f653a845a780d18eb98c4f6d4f569e85.png" group-title="No Category",IN: TV 9 Kannada
+https://restream-freeflix.vercel.app/api/filex/497286.m3u8
+#EXTINF:-1 tvg-id="497287" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2023-05/11adf97a1f11e433ee0133750c6f8eb5.svg" group-title="No Category",IN: TV 9 Marathi
+https://restream-freeflix.vercel.app/api/filex/497287.m3u8
+#EXTINF:-1 tvg-id="497288" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/ced277da5096e518641e52e606876d47.png" group-title="No Category",IN: TV 9 Telugu
+https://restream-freeflix.vercel.app/api/filex/497288.m3u8
+#EXTINF:-1 tvg-id="497289" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/ab8b937fcb8eeac0eacaefbc8b7b5f8b.png" group-title="No Category",IN: V6 News
+https://restream-freeflix.vercel.app/api/filex/497289.m3u8
+#EXTINF:-1 tvg-id="497290" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/c8f1da0128e2eec1a1f93811e761f7d8.png" group-title="No Category",IN: Zee 24 Ghanta
+https://restream-freeflix.vercel.app/api/filex/497290.m3u8
+#EXTINF:-1 tvg-id="497291" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/8df915e2607e4ae07918bc72a56f1d3f.png" group-title="No Category",IN: Zee 24 Kalak
+https://restream-freeflix.vercel.app/api/filex/497291.m3u8
+#EXTINF:-1 tvg-id="497292" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/59f3fa24fe411768bb5e776b6b0ec11d.png" group-title="No Category",IN: Zee News
+https://restream-freeflix.vercel.app/api/filex/497292.m3u8
+#EXTINF:-1 tvg-id="497293" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2023-09/ea34dd159c2aaa97823f79c17456583f.svg" group-title="No Category",IN: ZEE Rajasthan News
+https://restream-freeflix.vercel.app/api/filex/497293.m3u8
+#EXTINF:-1 tvg-id="502975" tvg-logo="https://www.lyngsat.com/logo/tv/tt/tata-play-comedy-in.png" group-title="No Category",Tata Play Comedy
+https://restream-freeflix.vercel.app/api/filex/502975.m3u8
+#EXTINF:-1 tvg-id="502976" tvg-logo="https://i.imgur.com/CKc8QB9.png" group-title="No Category",Tata Play Classic Cinema
+https://restream-freeflix.vercel.app/api/filex/502976.m3u8
+#EXTINF:-1 tvg-id="502977" tvg-logo="https://i.imgur.com/YR68ODg.png" group-title="No Category",Tata Play Fitness
+https://restream-freeflix.vercel.app/api/filex/502977.m3u8
+#EXTINF:-1 tvg-id="502978" tvg-logo="https://i.imgur.com/QMd3qKH.png" group-title="No Category",Tata Play Music
+https://restream-freeflix.vercel.app/api/filex/502978.m3u8
+#EXTINF:-1 tvg-id="502979" tvg-logo="" group-title="No Category",Tata Play Zindagi
+https://restream-freeflix.vercel.app/api/filex/502979.m3u8
+#EXTINF:-1 tvg-id="512328" tvg-logo="" group-title="No Category",IN | SONY MAX 1 HD
+https://restream-freeflix.vercel.app/api/filex/512328.m3u8
+#EXTINF:-1 tvg-id="519797" tvg-logo="" group-title="No Category",CID 24/7
+https://restream-freeflix.vercel.app/api/filex/519797.m3u8
+#EXTINF:-1 tvg-id="519783" tvg-logo="" group-title="No Category",CRIME PETROL 24/7
+https://restream-freeflix.vercel.app/api/filex/519783.m3u8
+#EXTINF:-1 tvg-id="542293" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDuqy4QrAQazx1QLHEKCoUsiIb0PIa7GPrBcWz9gtlNbabIfHf1URPycU&s=10" group-title="No Category",BIG BOSS
+https://restream-freeflix.vercel.app/api/filex/542293.m3u8
+#EXTINF:-1 tvg-id="122825" tvg-logo="" group-title="No Category",IN | M TV
+https://restream-freeflix.vercel.app/api/filex/122825.m3u8
+#EXTINF:-1 tvg-id="246679" tvg-logo="https://www.lyngsat.com/logo/tv/zz/zoom_tv_in.png" group-title="No Category",IN | ZOOM MUSIC HD
+https://restream-freeflix.vercel.app/api/filex/246679.m3u8
+#EXTINF:-1 tvg-id="246680" tvg-logo="https://www.lyngsat.com/logo/tv/mm/mtv-us.png" group-title="No Category",IN | M TV MUSIC HD
+https://restream-freeflix.vercel.app/api/filex/246680.m3u8
+#EXTINF:-1 tvg-id="246685" tvg-logo="https://www.lyngsat.com/logo/tv/jj/jalwa_tv_pk.png" group-title="No Category",JALWA MUSIC HD
+https://restream-freeflix.vercel.app/api/filex/246685.m3u8
+#EXTINF:-1 tvg-id="246686" tvg-logo="https://www.lyngsat.com/logo/tv/aa/ary_musik.png" group-title="No Category",ARY MUSIC HD
+https://restream-freeflix.vercel.app/api/filex/246686.m3u8
+#EXTINF:-1 tvg-id="501194" tvg-logo="" group-title="No Category",IN | 8XM HD
+https://restream-freeflix.vercel.app/api/filex/501194.m3u8
+#EXTINF:-1 tvg-id="246746" tvg-logo="https://www.lyngsat-logo.com/logo/tv/oo/outdoor-channel-us.png" group-title="No Category",USA | OUT DOOR HD
+https://restream-freeflix.vercel.app/api/filex/246746.m3u8
+#EXTINF:-1 tvg-id="451499" tvg-logo="" group-title="No Category",RELAXON
+https://restream-freeflix.vercel.app/api/filex/451499.m3u8
+#EXTINF:-1 tvg-id="246741" tvg-logo="http://webotv.asia:80/images/1702a3ea4b606deecdfa86d890b96f4b.png" group-title="No Category",IN | TRAVEL XP 4K
+https://restream-freeflix.vercel.app/api/filex/246741.m3u8
+#EXTINF:-1 tvg-id="246743" tvg-logo="https://www.lyngsat.com/logo/tv/dd/discover-pakistan-pk.png" group-title="No Category",PK | DISCOVER PAKISTAN HD
+https://restream-freeflix.vercel.app/api/filex/246743.m3u8
+#EXTINF:-1 tvg-id="246745" tvg-logo="http://14.192.144.8:80/images/cc8f333e810a0b724f1887dfc7e2f58e.png" group-title="No Category",IN | DISCOVERY TURBO HINDI HD
+https://restream-freeflix.vercel.app/api/filex/246745.m3u8
+#EXTINF:-1 tvg-id="246720" tvg-logo="https://1000logos.net/wp-content/uploads/2023/01/Animal-Planet-logo.png" group-title="No Category",IN | ANIMAL PLANET 4K
+https://restream-freeflix.vercel.app/api/filex/246720.m3u8
+#EXTINF:-1 tvg-id="246722" tvg-logo="https://www.lyngsat.com/logo/tv/hh/history_us.png" group-title="No Category",IN | HISTORY 4k
+https://restream-freeflix.vercel.app/api/filex/246722.m3u8
+#EXTINF:-1 tvg-id="246728" tvg-logo="https://seeklogo.com/images/N/nat-geo-wild-logo-CFB1305DCD-seeklogo.com.png" group-title="No Category",IN | NAT GEO WILD 4K
+https://restream-freeflix.vercel.app/api/filex/246728.m3u8
+#EXTINF:-1 tvg-id="246730" tvg-logo="https://www.lyngsat.com/logo/tv/bb/bbc-earth-uk.png" group-title="No Category",IN | BBC EARTH 4K
+https://restream-freeflix.vercel.app/api/filex/246730.m3u8
+#EXTINF:-1 tvg-id="246732" tvg-logo="https://seeklogo.com/images/T/tlc-logo-774E9A4AB6-seeklogo.com.png" group-title="No Category",IN | TLC 4K
+https://restream-freeflix.vercel.app/api/filex/246732.m3u8
+#EXTINF:-1 tvg-id="246734" tvg-logo="https://www.lyngsat.com/logo/tv/dd/discovery-channel-east-us.png" group-title="No Category",IN | DISCOVERY 4K
+https://restream-freeflix.vercel.app/api/filex/246734.m3u8
+#EXTINF:-1 tvg-id="246736" tvg-logo="http://14.192.144.8:80/images/8a0b663405956121afd3fbae92f56a76.png" group-title="No Category",IN | DISCOVERY SCIENCE 4K
+https://restream-freeflix.vercel.app/api/filex/246736.m3u8
+#EXTINF:-1 tvg-id="246738" tvg-logo="http://14.192.144.8:80/images/100aa2bc3a141d7f3bc7c1a4cdd39cd5.png" group-title="No Category",IN | INVESTIGATION DISCOVERY 4K
+https://restream-freeflix.vercel.app/api/filex/246738.m3u8
+#EXTINF:-1 tvg-id="246740" tvg-logo="http://webotv.asia:80/images/e990a04b9b6c0178d787ddc066e997b4.png" group-title="No Category",IN | NATIONAL GEO 4K
+https://restream-freeflix.vercel.app/api/filex/246740.m3u8
+#EXTINF:-1 tvg-id="246719" tvg-logo="https://1000logos.net/wp-content/uploads/2023/01/Animal-Planet-logo.png" group-title="No Category",IN | ANIMAL PLANET HINDI HD
+https://restream-freeflix.vercel.app/api/filex/246719.m3u8
+#EXTINF:-1 tvg-id="246721" tvg-logo="https://www.lyngsat.com/logo/tv/hh/history_us.png" group-title="No Category",IN | HISTORY HINDI HD
+https://restream-freeflix.vercel.app/api/filex/246721.m3u8
+#EXTINF:-1 tvg-id="246737" tvg-logo="https://www.lyngsat.com/logo/tv/ii/investigation-discovery-us.png" group-title="No Category",IN | INVESTIGATION DISCOVERY HINDI HD
+https://restream-freeflix.vercel.app/api/filex/246737.m3u8
+#EXTINF:-1 tvg-id="246727" tvg-logo="https://seeklogo.com/images/N/nat-geo-wild-logo-CFB1305DCD-seeklogo.com.png" group-title="No Category",IN | NAT GEO WILD HINDI HD
+https://restream-freeflix.vercel.app/api/filex/246727.m3u8
+#EXTINF:-1 tvg-id="246729" tvg-logo="https://www.lyngsat.com/logo/tv/bb/bbc-earth-uk.png" group-title="No Category",IN | BBC EARTH HINDI HD
+https://restream-freeflix.vercel.app/api/filex/246729.m3u8
+#EXTINF:-1 tvg-id="246731" tvg-logo="https://seeklogo.com/images/T/tlc-logo-774E9A4AB6-seeklogo.com.png" group-title="No Category",IN | TLC HINDI HD
+https://restream-freeflix.vercel.app/api/filex/246731.m3u8
+#EXTINF:-1 tvg-id="246733" tvg-logo="https://www.lyngsat.com/logo/tv/dd/discovery-channel-east-us.png" group-title="No Category",IN | DISCOVERY HD (HINDI)
+https://restream-freeflix.vercel.app/api/filex/246733.m3u8
+#EXTINF:-1 tvg-id="246735" tvg-logo="https://www.lyngsat.com/logo/tv/dd/discovery_science_in.png" group-title="No Category",IN | DISCOVERY SCIENCE HINDI HD
+https://restream-freeflix.vercel.app/api/filex/246735.m3u8
+#EXTINF:-1 tvg-id="246739" tvg-logo="https://seeklogo.com/images/N/National_Geographic-logo-A43277202F-seeklogo.com.png" group-title="No Category",IN | NATIONAL GEO HD (HINDI)
+https://restream-freeflix.vercel.app/api/filex/246739.m3u8
+#EXTINF:-1 tvg-id="531338" tvg-logo="" group-title="No Category",IN | TRAVEL XP HD (HINDI)
+https://restream-freeflix.vercel.app/api/filex/531338.m3u8
+#EXTINF:-1 tvg-id="5" tvg-logo="https://i.imgur.com/mXgp2qD.png" group-title="No Category",IN | CARTOON NET WORK
+https://restream-freeflix.vercel.app/api/filex/5.m3u8
+#EXTINF:-1 tvg-id="9" tvg-logo="https://images.pluto.tv/channels/5f121460b73ac6000719fbaf/colorLogoPNG.png" group-title="No Category",IN | Nick Jr
+https://restream-freeflix.vercel.app/api/filex/9.m3u8
+#EXTINF:-1 tvg-id="11" tvg-logo="http://103.184.192.164:5001/jtvimage/Nick_HD_Plus.png" group-title="No Category",IN | Nick HD +
+https://restream-freeflix.vercel.app/api/filex/11.m3u8
+#EXTINF:-1 tvg-id="320" tvg-logo="https://www.lyngsat.com/logo/tv/pp/pogo-in.png" group-title="No Category",IN | Pogo (hindi)
+https://restream-freeflix.vercel.app/api/filex/320.m3u8
+#EXTINF:-1 tvg-id="123826" tvg-logo="https://www.lyngsat.com/logo/tv/hh/hungama.png" group-title="No Category",IN | Hangama
+https://restream-freeflix.vercel.app/api/filex/123826.m3u8
+#EXTINF:-1 tvg-id="123848" tvg-logo="" group-title="No Category",IN | DISNEY JUNIOR HINDI
+https://restream-freeflix.vercel.app/api/filex/123848.m3u8
+#EXTINF:-1 tvg-id="246763" tvg-logo="https://logos-world.net/wp-content/uploads/2021/08/Disney-Channel-Logo-700x394.png" group-title="No Category",IN | DISNEY CHANNEL
+https://restream-freeflix.vercel.app/api/filex/246763.m3u8
+#EXTINF:-1 tvg-id="246765" tvg-logo="" group-title="No Category",IN | DISNEY INDIA
+https://restream-freeflix.vercel.app/api/filex/246765.m3u8
+#EXTINF:-1 tvg-id="246767" tvg-logo="https://www.lyngsat.com/logo/tv/nn/nickelodeon_sonic_us.png" group-title="No Category",IN | SONIC NICK HD
+https://restream-freeflix.vercel.app/api/filex/246767.m3u8
+#EXTINF:-1 tvg-id="246769" tvg-logo="https://www.lyngsat.com/logo/tv/dd/disney_junior_us.png" group-title="No Category",IN | DISNEY JUNIOR HD
+https://restream-freeflix.vercel.app/api/filex/246769.m3u8
+#EXTINF:-1 tvg-id="246770" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/85/New_Nick_Logo_2015.png" group-title="No Category",IN | NICK HD
+https://restream-freeflix.vercel.app/api/filex/246770.m3u8
+#EXTINF:-1 tvg-id="246774" tvg-logo="https://www.lyngsat.com/logo/tv/kk/kidzoneplus-pakistan-ee-pk.png" group-title="No Category",IN | KIDS ZONE HD
+https://restream-freeflix.vercel.app/api/filex/246774.m3u8
+#EXTINF:-1 tvg-id="246775" tvg-logo="https://www.lyngsat.com/logo/tv/pp/planet-fun-uk.png" group-title="No Category",IN | PLANET FUN HD
+https://restream-freeflix.vercel.app/api/filex/246775.m3u8
+#EXTINF:-1 tvg-id="246778" tvg-logo="https://www.lyngsat.com/logo/tv/hh/hoora-tv-uk.png" group-title="No Category",IN | HOORA TV HD
+https://restream-freeflix.vercel.app/api/filex/246778.m3u8
+#EXTINF:-1 tvg-id="311" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqIunp2uh2ml7qunCMxZMnnK0LlcU5J3trYduXFFfpeU1swjI2yuY0h3g&s=10" group-title="No Category",PK | QURAN MUJEED HD
+https://restream-freeflix.vercel.app/api/filex/311.m3u8
+#EXTINF:-1 tvg-id="52112" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa0DMYfuiDHfvabUsLdD9zSym0_0sFzvv0HQ&s" group-title="No Category",PK | MAKKAH TV HD
+https://restream-freeflix.vercel.app/api/filex/52112.m3u8
+#EXTINF:-1 tvg-id="141305" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNW5YcMFmUmCkVaFvHjMjRHPYsI79RYDpoAA&usqp=CAU" group-title="No Category",PK | NOOR TV HD
+https://restream-freeflix.vercel.app/api/filex/141305.m3u8
+#EXTINF:-1 tvg-id="247145" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sunna-tv-sa.png" group-title="No Category",PK | SAUDI SUNNAH HD
+https://restream-freeflix.vercel.app/api/filex/247145.m3u8
+#EXTINF:-1 tvg-id="247146" tvg-logo="https://www.lyngsat.com/logo/tv/mm/madani-channel-pk.png" group-title="No Category",PK | MADANI CHANNEL HD
+https://restream-freeflix.vercel.app/api/filex/247146.m3u8
+#EXTINF:-1 tvg-id="247148" tvg-logo="https://www.lyngsat.com/logo/tv/aa/ahlebait.png" group-title="No Category",PK | AHLEBAIT TV HD
+https://restream-freeflix.vercel.app/api/filex/247148.m3u8
+#EXTINF:-1 tvg-id="247149" tvg-logo="https://en.haditv.co.uk/pics/logo.png" group-title="No Category",PK | HADI TV HD
+https://restream-freeflix.vercel.app/api/filex/247149.m3u8
+#EXTINF:-1 tvg-id="247150" tvg-logo="https://www.lyngsat.com/logo/tv/aa/ary_qtv.png" group-title="No Category",PK | ARY QTV HD
+https://restream-freeflix.vercel.app/api/filex/247150.m3u8
+#EXTINF:-1 tvg-id="247151" tvg-logo="https://www.lyngsat.com/logo/tv/pp/peace_tv_ae_urdu.png" group-title="No Category",PK | PEACE TV URDU HD
+https://restream-freeflix.vercel.app/api/filex/247151.m3u8
+#EXTINF:-1 tvg-id="247152" tvg-logo="https://www.lyngsat.com/logo/tv/pp/peace-tv-english-ae.png" group-title="No Category",PK | PEACE TV ENG HD
+https://restream-freeflix.vercel.app/api/filex/247152.m3u8
+#EXTINF:-1 tvg-id="247153" tvg-logo="https://www.lyngsat.com/logo/tv/pp/paigham_tv_pk.png" group-title="No Category",PK | PAIGHAM TV URDU HD
+https://restream-freeflix.vercel.app/api/filex/247153.m3u8
+#EXTINF:-1 tvg-id="247154" tvg-logo="https://www.lyngsat.com/logo/tv/mm/muntazar-tv-pk.png" group-title="No Category",PK | MUNTAZIR TV HD
+https://restream-freeflix.vercel.app/api/filex/247154.m3u8
+#EXTINF:-1 tvg-id="247147" tvg-logo="https://www.lyngsat.com/logo/tv/kk/karbala_satellite_channel.png" group-title="No Category",PK | KARBALA TV HD
+https://restream-freeflix.vercel.app/api/filex/247147.m3u8
+#EXTINF:-1 tvg-id="250471" tvg-logo="http://webotv.asia:80/images/b6e3e1fda4a1edec5876e1d2c59b17d4.png" group-title="No Category",NHK WORLD HD
+https://restream-freeflix.vercel.app/api/filex/250471.m3u8
+#EXTINF:-1 tvg-id="250473" tvg-logo="http://webotv.asia:80/images/92db1a6245114a1d7a5bcf767401861d.png" group-title="No Category",DW ENGLISH HD
+https://restream-freeflix.vercel.app/api/filex/250473.m3u8
+#EXTINF:-1 tvg-id="250474" tvg-logo="http://webotv.asia:80/images/ec8a1f46168a6678ce255acbfc4457f2.png" group-title="No Category",CNBC HD
+https://restream-freeflix.vercel.app/api/filex/250474.m3u8
+#EXTINF:-1 tvg-id="250448" tvg-logo="http://webotv.asia:80/images/e60be42bc508475ca446f1fbaf663758.png" group-title="No Category",ALJAZEERA
+https://restream-freeflix.vercel.app/api/filex/250448.m3u8
+#EXTINF:-1 tvg-id="250406" tvg-logo="" group-title="No Category",BBC NEWS
+https://restream-freeflix.vercel.app/api/filex/250406.m3u8
+#EXTINF:-1 tvg-id="250472" tvg-logo="http://webotv.asia:80/images/70e4c22ac19e11130549978a6ce439c1.png" group-title="No Category",SKY NEW
+https://restream-freeflix.vercel.app/api/filex/250472.m3u8
+#EXTINF:-1 tvg-id="288076" tvg-logo="" group-title="No Category",AL JAZEERA ENGLISH
+https://restream-freeflix.vercel.app/api/filex/288076.m3u8
+#EXTINF:-1 tvg-id="456452" tvg-logo="" group-title="No Category",FRANCE 24 ENGLISH
+https://restream-freeflix.vercel.app/api/filex/456452.m3u8
+#EXTINF:-1 tvg-id="250407" tvg-logo="" group-title="No Category",CNN NEWS
+https://restream-freeflix.vercel.app/api/filex/250407.m3u8
+#EXTINF:-1 tvg-id="276156" tvg-logo="" group-title="No Category",BLOOMBERG-HD
+https://restream-freeflix.vercel.app/api/filex/276156.m3u8
