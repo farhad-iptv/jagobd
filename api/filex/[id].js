@@ -11,7 +11,7 @@ export default async function handler(req, res) {
     id = String(id).replace(/\.m3u8$/i, "");
 
     // Xtream Codes base URL (your source)
-    const baseXtream = "http://khanmalik.io:80/live/Khemprakash/skyplay2421/";
+    const baseXtream = "http://superjal.xyz:80/live/V9PS58ZYG893E36/3l7T3JM9qg/";
     const sourceUrl = `${baseXtream}/${id}.m3u8`;
 
     // Fetch upstream with curl-like headers
@@ -20,8 +20,8 @@ export default async function handler(req, res) {
       headers: {
         "User-Agent": "curl/7.81.0", // mimic PHP curl
         "Accept": "*/*",
-        "Referer": "http://khanmalik.io:80",
-        "Origin": "http://khanmalik.io:80"
+        "Referer": "http://superjal.xyz:80",
+        "Origin": "http://superjal.xyz:80"
       }
     });
 
