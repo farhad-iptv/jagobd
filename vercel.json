@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/stream/test/route.ts": {
+      "maxDuration": 30
+    }
+  }
+}
