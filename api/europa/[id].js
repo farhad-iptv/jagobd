@@ -11,7 +11,7 @@ export default async function handler(req, res) {
     id = String(id).replace(/\.m3u8$/i, "");
 
     // Xtream Codes base URL (your source)
-    const baseXtream = "http://bolulu.stream-europa.com:8080/live/Andre_Schmitz/ex5K7dtM/";
+    const baseXtream = "http://euro-deluxe.com:8080/live/DanielvAngeloCast/e3u3dSd7hyUFK/";
     const sourceUrl = `${baseXtream}/${id}.m3u8`;
 
     // Fetch upstream with curl-like headers
@@ -20,8 +20,8 @@ export default async function handler(req, res) {
       headers: {
         "User-Agent": "curl/7.81.0", // mimic PHP curl
         "Accept": "*/*",
-        "Referer": "http://bolulu.stream-europa.com:8080",
-        "Origin": "http://bolulu.stream-europa.com:8080"
+        "Referer": "http://euro-deluxe.com",
+        "Origin": "http://euro-deluxe.com"
       }
     });
 
